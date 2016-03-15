@@ -1,0 +1,49 @@
+{
+	"Personal Summary" : {
+		"Name" : "Wouter De Rijck",
+		"Address" : "Leon De Smetlaan 83, 9230 Wetteren",
+		"Phone" : "+32 (0)499 345 876",
+		"Birth" : {
+			"Date" : "1981-11-18T18:30:00.000Z",
+			"Place" : "Gent"
+		},
+		"Nationality" : "Belgian"	
+		},
+	"Education" : [	
+		{
+			"Type" : "Secondary school",
+			"Content" : "Photography",
+			"Institution" : "SISA Antwerpen",
+			"Completed" : "June 2000",
+			"Certification" : "A2"
+		},
+		{
+			"Type" : "Job training",
+			"Content" : ".Net developer",
+			"Institution" : "VDAB Wevelgem",
+			"Completed" : "October 2009"
+		},
+		{
+			"Type" : "Job training",
+			"Content" : "PC/Network technician",
+			"Institution" : "VDAB Wondelgem(Gent)",
+			"Completed" : "September 2002"
+		}
+	],
+	"Languages" : [
+		{ "Language" : "Dutch" , "Level" : "native"},
+		{ "Language" : "English" , "Level" : "very good"},
+		{ "Language" : "French" , "Level" : "rusty"}
+	],
+	"Buzz words" : [
+		"C#", "Node.js", "Java(android)", "rake", "MySql/Maria DB", "SQL Server", "git", "css", "hmtl", 
+		"MVC", "TDD", "software craft-journeyman", "Linux", "Windows",  "Android"
+	],
+	"Activities" : {
+		"Active" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat"],
+		"Planned" : ["SoCrates UK", "Coderdojo"]
+	},
+	"Hobbies" : [
+		"reading", "board gaming", "wargaming", "snowboarding", "motorbike riding", "being an idiot"
+	]
+}
