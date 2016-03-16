@@ -6,7 +6,6 @@
     request.onreadystatechange = function () {
           if (request.readyState == 4 && request.status == "200") {
             window.resume = JSON.parse(request.responseText);
-            alert("success");
         }
     };
     request.send(null);  
