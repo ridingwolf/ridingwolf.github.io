@@ -4,6 +4,10 @@
 	margin: auto;
 }
 
+span {
+	display: inline-block;
+	margin-right: 0.5em;
+}
 
 footer {
 	position: absolute;

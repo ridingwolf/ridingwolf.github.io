@@ -26,7 +26,7 @@ function formatArrayData(data){
 		return '';
 
 	if(typeof data[0] === 'string')
-		return data.toString().replace(/,/g, ', ');
+		return '<span>' + data.toString().replace(/,/g, ',</span><span>') + '</span>';
 
 	return 'data.len';
 }
@@ -43,8 +43,7 @@ function formatSectionData(sectionData){
 }
 
 function createSection(name, sectionData){
-	return '' + 
-		'<h2>' + name + '</h2>' +
+	return '<h2>' + name + '</h2>' +
 		'<div class="section">' + 
 			formatSectionData(sectionData) + 
 		'</div>';
