@@ -9,6 +9,10 @@ span {
 	margin-right: 0.5em;
 }
 
+.section {
+	padding-left: 10px; 
+}
+
 footer {
 	position: absolute;
 	top: 100%;

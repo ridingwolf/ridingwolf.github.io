@@ -21,31 +21,46 @@ function getKeys(data){
 	return Object.keys(data || {});
 }
 
-function formatArrayData(data){
-	if(data.len === 0)
+function formatArray(data){
+	if((data || []).length === 0)
 		return '';
 
 	if(typeof data[0] === 'string')
-		return '<span>' + data.toString().replace(/,/g, ',</span><span>') + '</span>';
+		return data
+			.map(function(item){ return '<span>' + item + ',</span>'; })
+			.join('')
+			.replace(/,(<\/[^<]+>)$/, '$1');
 
-	return 'data.len';
+	return data.map(formatData);
 }
 
-function formatSectionData(sectionData){
-	console.log(sectionData)
-	if(!sectionData)
+function formatObject(data){
+	if(!data)
 		return '';
 
-	if(sectionData instanceof Array)
-		return formatArrayData(sectionData);
-	else
-		return 'object formatting not yet supported';
+	var names = getKeys(data),
+	objectProperties = '';
+	_.forEach(names, function(name){
+		objectProperties += '<div><span>' + name + '</span>:<div>' + formatData(data[name]) + '</div></div>' 
+	})
+	return objectProperties;
+}
+
+var formatters = {
+	'Array' : formatArray,
+	'Object' : formatObject,
+	'String' : function(data){ return data; }
+};
+
+function formatData(data){
+	console.log(data.constructor.name);
+	return data ? formatters[data.constructor.name](data) : '';
 }
 
 function createSection(name, sectionData){
 	return '<h2>' + name + '</h2>' +
 		'<div class="section">' + 
-			formatSectionData(sectionData) + 
+			formatData(sectionData) + 
 		'</div>';
 }
 
