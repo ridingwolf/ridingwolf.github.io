@@ -46,10 +46,21 @@ function formatObject(data){
 	return objectProperties;
 }
 
+function formatString(data){ 
+	if(!data)
+		return '';
+
+	var date = new Date(data);
+	if(date !== "Invalid Date" && !isNaN(date))
+		return date.toLocaleString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+
+	return data; 
+}
+
 var formatters = {
 	'Array' : formatArray,
 	'Object' : formatObject,
-	'String' : function(data){ return data; }
+	'String' : formatString
 };
 
 function formatData(data){
