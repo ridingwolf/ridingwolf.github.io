@@ -53,7 +53,6 @@ var formatters = {
 };
 
 function formatData(data){
-	console.log(data.constructor.name);
 	return data ? formatters[data.constructor.name](data) : '';
 }
 
