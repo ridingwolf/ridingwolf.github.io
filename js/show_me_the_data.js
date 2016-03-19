@@ -27,7 +27,7 @@ function formatArray(data){
 
 	if(typeof data[0] === 'string')
 		return data
-			.map(function(item){ return '<span>' + item + ',</span>'; })
+			.map(function(item){ return '<div class="item">' + item + ',</div>'; })
 			.join('')
 			.replace(/,(<\/[^<]+>)$/, '$1');
 
@@ -41,7 +41,7 @@ function formatObject(data){
 	var names = getKeys(data),
 	objectProperties = '';
 	_.forEach(names, function(name){
-		objectProperties += '<div><span>' + name + '</span>:<div>' + formatData(data[name]) + '</div></div>' 
+		objectProperties += '<div class="object-item"><div class="name">' + name + '</div><div class="content">' + formatData(data[name]) + '</div></div>' 
 	})
 	return objectProperties;
 }
@@ -58,10 +58,10 @@ function formatData(data){
 }
 
 function createSection(name, sectionData){
-	return '<h2>' + name + '</h2>' +
-		'<div class="section">' + 
-			formatData(sectionData) + 
-		'</div>';
+	return '<div class="section">' +
+				'<h2>' + name + '</h2>' +
+				formatData(sectionData) + 
+			'</div>';
 }
 
 function showData(data){

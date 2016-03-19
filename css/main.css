@@ -2,19 +2,46 @@
 	min-width: 500px;
 	max-width: 65%;
 	margin: auto;
+	float: none;
 }
 
-span {
+div {
+	float: left;
+}
+
+.section {
+	clear: both;
+	padding: 5px 15px;
+}
+
+.section h2 {
+	margin: 5px -15px;
+}
+
+.object-item {
+	clear: both;
+}
+
+.object-item .object-item .name {
+	display: none;
+}
+
+.name {
+	margin: 0 10px;
+	clear: left;
+}
+
+.name::after {
+	content: " :";
+}
+
+.item {
 	display: inline-block;
 	margin-right: 0.5em;
 }
 
-.section {
-	padding-left: 10px; 
-}
-
 footer {
-	position: absolute;
+	position: fixed;
 	top: 100%;
 	width: 100%;
 	margin-top: -2em;
