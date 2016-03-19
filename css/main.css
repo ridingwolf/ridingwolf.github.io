@@ -26,6 +26,7 @@ div {
 .name {
 	margin: 0 10px;
 	clear: left;
+	width: 8em;
 }
 
 .name::after {
