@@ -1,0 +1,31 @@
+/* nicked paper look from http://www.sitepoint.com/css3-shuffled-paper/ */
+
+#resume, #resume:before, #resume:after
+{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+#resume
+{
+	position: relative;
+	width: 50%;
+	padding: 2em;
+	margin: 50px 25%;
+	min-height: 300px;
+}
+
+#resume:before, #resume:after
+{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotateZ(2.5deg);
+	-o-transform: rotate(2.5deg);
+	transform: rotateZ(2.5deg);
+	z-index: -1;
+}
