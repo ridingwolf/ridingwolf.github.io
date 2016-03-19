@@ -76,6 +76,6 @@ function showData(data){
 (function automaticloading(){
 	loadResumeData(function processData(data){
 		setPageTitle(data);
-		setTimeout(function delayedLoading(){ showData(data); }, 1500);
+		showData(data);
 	});
 })();
