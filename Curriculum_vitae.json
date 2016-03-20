@@ -29,6 +29,12 @@
 			"Completed" : "September 2002"
 		}
 	],
+	"Experience" : [
+		{
+			"Todo" : "add expirience data",
+			"Tempary" : "look at my <a href='https://be.linkedin.com/in/wouterderijck' target='new'>Linkedin profile</a>"
+		}
+	],
 	"Languages" : [
 		{ "Language" : "Dutch" , "Level" : "native"},
 		{ "Language" : "English" , "Level" : "very good"},
