@@ -68,7 +68,7 @@ function formatData(data){
 }
 
 function createSection(name, sectionData){
-	return '<div class="section">' +
+	return '<div class="section '+ name.toLowerCase().replace(/ /, '-') + '">' +
 				'<h2>' + name + '</h2>' +
 				formatData(sectionData) + 
 			'</div>';
