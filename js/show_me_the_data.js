@@ -31,7 +31,7 @@ function formatArray(data){
 			.join('')
 			.replace(/,(<\/[^<]+>)$/, '$1');
 
-	return data.map(formatData);
+	return data.map(formatData).join('');
 }
 
 function formatObject(data){
