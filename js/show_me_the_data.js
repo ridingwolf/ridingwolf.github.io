@@ -11,6 +11,10 @@ function loadResumeData(callback) {
     request.send(null);  
 }
 
+Array.prototype.render = function() {
+	return this.join('');
+}
+
 function setPageTitle(data){
 	document
 		.getElementsByTagName('title')[0]
@@ -28,22 +32,22 @@ function formatArray(data){
 	if(typeof data[0] === 'string')
 		return data
 			.map(function(item){ return '<div class="item">' + item + ',</div>'; })
-			.join('')
+			.render()
 			.replace(/,(<\/[^<]+>)$/, '$1');
-
-	return data.map(formatData).join('');
+			
+	return data.map(formatData).render();
 }
 
 function formatObject(data){
 	if(!data)
 		return '';
 
-	var names = getKeys(data),
-	objectProperties = '';
-	_.forEach(names, function(name){
-		objectProperties += '<div class="object-item"><div class="name">' + name + '</div><div class="content">' + formatData(data[name]) + '</div></div>' 
-	})
-	return objectProperties;
+	return getKeys(data).map(function (name) {
+		return '<div class="object-item">' + 
+					'<div class="name">' + name + '</div>' + 
+					'<div class="content">' + formatData(data[name]) + '</div>' + 
+				'</div>';
+	}).render();
 }
 
 function formatString(data){ 
@@ -67,25 +71,21 @@ function formatData(data){
 	return data ? formatters[data.constructor.name](data) : '';
 }
 
-function createSection(name, sectionData){
-	return '<div class="section '+ name.toLowerCase().replace(/ /, '-') + '">' +
-				'<h2>' + name + '</h2>' +
-				formatData(sectionData) + 
-			'</div>';
-}
-
-function showData(data){
-	var sections = '';
-	_.forEach(getKeys(data), function processSection(name){
-		sections += createSection(name, data[name]);
-	});
-
-	document.getElementById('resume').innerHTML = sections;
+function render(data){
+	document
+		.getElementById('resume')
+		.innerHTML = getKeys(data)
+			.map(function (name){ 
+				return 	'<div class="section '+ name.toLowerCase().replace(/ /, '-') + '">' +
+							'<h2>' + name + '</h2>' +
+							formatData(data[name]) + 
+						'</div>';
+		});
 }
 
 (function automaticloading(){
 	loadResumeData(function processData(data){
 		setPageTitle(data);
-		showData(data);
+		render(data);
 	});
 })();
