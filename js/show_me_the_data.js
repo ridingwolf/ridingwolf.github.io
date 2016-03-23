@@ -73,7 +73,7 @@ function formatData(data){
 function render(data){
 	document
 		.getElementById('resume')
-		.innerHTML = getKeys(data)
+		.innerHTML = '<h1>Curriculum vitae</h1>' + getKeys(data)
 			.render(function (name){ 
 				return 	'<div class="section '+ name.toLowerCase().replace(/ /, '-') + '">' +
 							'<h2>' + name + '</h2>' +
