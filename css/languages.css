@@ -1,0 +1,20 @@
+.section.languages .name {
+	display: none;
+}
+
+.section.languages .object-item {
+	clear: none;
+	margin-left: 0.5em; 
+}
+
+.section.languages .object-item:nth-child(odd) .content::before {
+	content: '(';
+}
+
+.section.languages .object-item:nth-child(odd) .content::after {
+	content: '),';
+}
+
+.section.languages .object-item:last-child .content::after {
+	content: ')';
+}
