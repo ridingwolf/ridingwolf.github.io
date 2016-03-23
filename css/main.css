@@ -1,3 +1,7 @@
+@import url('spinner.css');
+@import url('paperlook.css');
+@import url('print.css') print;
+
 #resume {
 	margin: 0 25%; 
 }

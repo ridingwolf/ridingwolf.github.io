@@ -1,0 +1,13 @@
+#resume, #resume:before, #resume:after {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+#resume {
+	margin: 0 !important;
+	width: 95% !important;
+}
+
+#source {
+	display: none;
+}
