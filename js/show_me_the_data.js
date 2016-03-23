@@ -11,8 +11,8 @@ function loadResumeData(callback) {
     request.send(null);  
 }
 
-Array.prototype.render = function() {
-	return this.join('');
+Array.prototype.render = function(formatData) {
+	return this.map(formatData).join('');
 }
 
 function setPageTitle(data){
@@ -31,23 +31,22 @@ function formatArray(data){
 
 	if(typeof data[0] === 'string')
 		return data
-			.map(function(item){ return '<div class="item">' + item + ',</div>'; })
-			.render()
+			.render(function(item){ return '<div class="item">' + item + ',</div>'; })
 			.replace(/,(<\/[^<]+>)$/, '$1');
 			
-	return data.map(formatData).render();
+	return data.render(formatData);
 }
 
 function formatObject(data){
 	if(!data)
 		return '';
 
-	return getKeys(data).map(function (name) {
+	return getKeys(data).render(function (name) {
 		return '<div class="object-item">' + 
 					'<div class="name">' + name + '</div>' + 
 					'<div class="content">' + formatData(data[name]) + '</div>' + 
 				'</div>';
-	}).render();
+	});
 }
 
 function formatString(data){ 
@@ -75,12 +74,12 @@ function render(data){
 	document
 		.getElementById('resume')
 		.innerHTML = getKeys(data)
-			.map(function (name){ 
+			.render(function (name){ 
 				return 	'<div class="section '+ name.toLowerCase().replace(/ /, '-') + '">' +
 							'<h2>' + name + '</h2>' +
 							formatData(data[name]) + 
 						'</div>';
-		}).render();
+		});
 }
 
 (function automaticloading(){
