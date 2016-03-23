@@ -80,7 +80,7 @@ function render(data){
 							'<h2>' + name + '</h2>' +
 							formatData(data[name]) + 
 						'</div>';
-		});
+		}).render();
 }
 
 (function automaticloading(){
