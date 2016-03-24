@@ -15,6 +15,10 @@ Array.prototype.render = function(formatData) {
 	return this.map(formatData).join('');
 }
 
+String.prototype.in = function (element) {
+	return element + this + element.replace(/^<([a-z0-9]+).*>$/gi, '</$1>');
+}
+
 function setPageTitle(data){
 	document
 		.getElementsByTagName('title')[0]
@@ -31,8 +35,8 @@ function formatArray(data){
 
 	if(typeof data[0] === 'string')
 		return data
-			.render(function(item){ return '<div class="item">' + item + ',</div>'; })
-			.replace(/,(<\/[^<]+>)$/, '$1');
+			.render(function(item){ return item.in('<div class="item">'); })
+			.in('<div class="simple-list">');
 			
 	return data.render(formatData);
 }
@@ -42,10 +46,9 @@ function formatObject(data){
 		return '';
 
 	return getKeys(data).render(function (name) {
-		return '<div class="object-item">' + 
-					'<div class="name">' + name + '</div>' + 
-					'<div class="content">' + formatData(data[name]) + '</div>' + 
-				'</div>';
+		var objContent = name.in('<div class="name">') + 
+						formatData(data[name]).in('<div class="content">');
+		return 	objContent.in('<div class="object-item">');
 	});
 }
 
@@ -73,12 +76,12 @@ function formatData(data){
 function render(data){
 	document
 		.getElementById('resume')
-		.innerHTML = '<h1>Curriculum vitae</h1>' + getKeys(data)
-			.render(function (name){ 
-				return 	'<div class="section '+ name.toLowerCase().replace(/ /, '-') + '">' +
-							'<h2>' + name + '</h2>' +
-							formatData(data[name]) + 
-						'</div>';
+		.innerHTML = 'Curriculum vitae'.in('<h1>') + 
+			getKeys(data)
+			.render(function renderSection(name){ 
+				var className = name.toLowerCase().replace(/ /, '-'),
+				sectionContent = name.in('<h2>') + formatData(data[name]);
+				return 	sectionContent.in('<div class="section '+ className + '">');
 		});
 }
 
