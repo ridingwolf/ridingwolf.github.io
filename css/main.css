@@ -45,9 +45,17 @@ h1 {
 	content: " :";
 }
 
-.item {
+.simple-list .item {
 	display: inline-block;
 	margin-right: 0.5em;
+}
+
+.simple-list .item::after {
+	content: ',';
+}
+
+.simple-list .item:last-child::after {
+	content: '';
 }
 
 footer {
