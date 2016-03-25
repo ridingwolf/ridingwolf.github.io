@@ -1,8 +1,25 @@
-.section.education .name {
+.section.education .object {
+	margin-bottom: 1em; 
+}
+.section.education .content.type {
 	display: none;
 }
 
-/*.section.education .object-property {
-	margin-bottom: 2em;
+.section.education .object::before {
+	content: 'Job training: ';
+	font-style: italic;
+	clear: both;
+	float: left;
 }
-*/
+
+.section.education .object:first-child::before {
+	content: '';
+}
+
+.section.education .object:first-child .object-property:last-child {
+	clear: none;
+}
+
+.section.education .object:first-child .object-property:last-child .content::before {
+	content: ', ';
+}

@@ -34,7 +34,7 @@ h1 {
 
 .name {
 	clear: left;
-	width: 8em;
+	width: 7em;
 }
 
 .name::after {
