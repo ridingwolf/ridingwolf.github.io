@@ -58,6 +58,15 @@ h1 {
 	content: '';
 }
 
+.complex-list > .object {
+	margin-bottom: 1em; 
+}
+
+.complex-list > .object:last-child {
+	margin-bottom: 0; 
+}
+
+
 footer {
 	position: fixed;
 	top: 100%;

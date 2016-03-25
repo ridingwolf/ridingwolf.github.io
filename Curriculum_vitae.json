@@ -31,9 +31,23 @@
 	],
 	"Experience" : [
 		{
-			"Todo" : "add expirience data",
-			"Tempary" : "look at my <a href='https://be.linkedin.com/in/wouterderijck' target='new'>Linkedin profile</a>"
+			"Company" : "iChoosr",
+			"Period" : "August 2012 - ongoing",
+			"Function" : "Developer (full stack)",
+			"Stack" : ["C#", "Nhibernate", "Spark view engie", "Castle Monorail(MVC)", "Rake", "sass", "Javascript (client/server side)", "MySql"]
+		},
+		{
+			"Company" : "MMPCS",
+			"Period" : "January 2010 - July 2012",
+			"Function" : "Junior Developer",
+			"Stack" : ["VB", "C#", "POS for .NET", "WPF", "Win-forms", "T-SQL"]
+		},
+		{
+			"Company" : "Ketten Wulf, Dep. Dyna Chains",
+			"Period" : "February 2003 - October 2008",
+			"Function" : "Warehouse assistent"
 		}
+
 	],
 	"Languages" : [
 		{ "Language" : "Dutch" , "Level" : "native"},
@@ -41,14 +55,14 @@
 		{ "Language" : "French" , "Level" : "rusty"}
 	],
 	"Buzz words" : [
-		"C#", "Node.js", "Java(android)", "rake", "MySql/Maria DB", "SQL Server", "git", "css", "hmtl", 
-		"MVC", "TDD", "software craft-journeyman", "Linux", "Windows",  "Android"
+		"C#", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "hmtl", 
+		"MVC", "TDD", "Software craft-journeyman", "Linux", "Windows",  "Android"
 	],
 	"Activities" : {
 		"Participated" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat"],
 		"Planned" : ["SoCrates UK", "Coderdojo"]
 	},
 	"Hobbies" : [
-		"reading", "board gaming", "wargaming", "snowboarding", "motorbike riding", "being an idiot"
+		"Reading", "Board gaming", "Wargaming", "Snowboarding", "Motorbike riding", "Being an idiot"
 	]
 }

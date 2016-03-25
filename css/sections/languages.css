@@ -3,7 +3,7 @@
 }
 
 .section.languages .object-property .content.language {
-	width: 8em;
+	width: 5em;
 }
 
 .section.languages .object-property .content.language::after {
@@ -13,4 +13,8 @@
 .section.languages .object-property .content.level {
 	clear: left;
 
+}
+
+.section.languages .complex-list > .object {
+	margin-bottom: 0;
 }

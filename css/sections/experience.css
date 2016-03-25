@@ -1,0 +1,26 @@
+.section.experience .object {
+	width: 100%;
+}
+
+.section.experience .object .object-property {
+	clear: none;
+	margin-right: 0.5em; 
+}
+
+.section.experience .object .object-property:nth-child(2) {
+	clear: right;
+	float: right;
+}
+
+.section.experience .object .object-property:nth-child(4) {
+	clear: left;
+	width: 75%;
+}
+
+.section.experience .function::before {
+	content: "- ";
+}
+
+.section.experience .stack {
+	font-style: italic;
+}

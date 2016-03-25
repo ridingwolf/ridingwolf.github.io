@@ -1,11 +1,3 @@
-.section.education .object {
-	margin-bottom: 1em; 
-}
-
-.section.education .object:last-child {
-	margin-bottom: 0; 
-}
-
 .section.education .content.type {
 	display: none;
 }
