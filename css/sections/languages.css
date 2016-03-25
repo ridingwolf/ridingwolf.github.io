@@ -1,0 +1,16 @@
+.section.languages .object-property {
+	clear: none;
+}
+
+.section.languages .object-property .content.language {
+	width: 8em;
+}
+
+.section.languages .object-property .content.language::after {
+	content: ': ';
+}
+
+.section.languages .object-property .content.level {
+	clear: left;
+
+}

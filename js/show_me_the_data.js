@@ -19,6 +19,10 @@ String.prototype.in = function (element) {
 	return element + this + element.replace(/^<([a-z0-9]+).*>$/gi, '</$1>');
 }
 
+String.prototype.toClassName = function(){
+	return this.toLowerCase().replace(/ /, '-');
+}
+
 function setPageTitle(data){
 	document
 		.getElementsByTagName('title')[0]
@@ -38,18 +42,19 @@ function formatArray(data){
 			.render(function(item){ return item.in('<div class="item">'); })
 			.in('<div class="simple-list">');
 			
-	return data.render(formatData);
+	return data.render(formatData).in('<div class="complex-list">');
 }
 
 function formatObject(data){
 	if(!data)
 		return '';
 
-	return getKeys(data).render(function (name) {
-		var objContent = name.in('<div class="name">') + 
-						formatData(data[name]).in('<div class="content">');
-		return 	objContent.in('<div class="object-item">');
-	});
+	return getKeys(data)
+		.render(function (name) {
+			var objContent = 	name.in('<div class="name ' + name.toClassName() + '">') + 
+								formatData(data[name]).in('<div class="content ' + name.toClassName() + '">');
+		return 	objContent.in('<div class="object-property">');
+	}).in('<div class="object">');
 }
 
 function formatString(data){ 
@@ -79,9 +84,8 @@ function render(data){
 		.innerHTML = 'Curriculum vitae'.in('<h1>') + 
 			getKeys(data)
 			.render(function renderSection(name){ 
-				var className = name.toLowerCase().replace(/ /, '-'),
-				sectionContent = name.in('<h2>') + formatData(data[name]);
-				return 	sectionContent.in('<div class="section '+ className + '">');
+				var sectionContent = name.in('<h2>') + formatData(data[name]);
+				return 	sectionContent.in('<div class="section '+ name.toClassName() + '">');
 		});
 }
 

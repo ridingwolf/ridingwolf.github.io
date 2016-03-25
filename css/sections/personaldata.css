@@ -1,0 +1,29 @@
+.section.personal-summary h2 {
+	display: none;
+}
+
+.section.personal-summary .name {
+	display: none;
+}
+
+.section.personal-summary .content.name {
+	display: block;
+	width: auto;
+}
+
+.section.personal-summary .content.name::after {
+	content: '';
+}
+
+.section.personal-summary .content .object .object-property {
+	clear: none;
+}
+
+.section.personal-summary .content .object .object-property {
+	float: right;
+	margin-right: 0.5em; 
+}
+
+.section.personal-summary .content .object .object-property .place::after {
+	content: ',';
+}
