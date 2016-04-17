@@ -1,12 +1,14 @@
 {
 	"Personal Summary" : {
 		"Name" : "Wouter De Rijck",
-		"Address" : "Wetteren, België, Aarde, Melkweg",
-		"Phone" : "+32 (0)499 345 876",
+		"Address" : "Wetteren, België, Gaia",
 		"Birth" : {
 			"Date" : "1981-11-18T18:30:00.000Z",
 			"Place" : "Gent"
-		}
+		},
+		"Email" : "wouter.de.rijck@gmail.com",
+		"Phone" : "+32 (0)499 345 876"
+
 	},
 	"Education" : [	
 		{

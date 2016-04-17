@@ -57,9 +57,19 @@ function formatObject(data){
 	}).in('<div class="object">');
 }
 
+function isEmail(data){
+	return data.match(/^[^@]+@([a-z0-9]+\.)+[a-z0-9]+$/);
+}
+
+function formatEmail(data){
+	return data.replace(/^([^@]+)@(.+)/, '<span>$1</span><span class="email-split"> keep crawling little bots </span><span>$2</span>');
+}
+
 function formatString(data){ 
 	if(!data)
 		return '';
+	if(isEmail(data))
+		return formatEmail(data);
 
 	// chrome casts an string "month year" to a date, day 1 of that month, which gives wrong output
 	var date = new Date(data);

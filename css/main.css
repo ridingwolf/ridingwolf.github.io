@@ -80,3 +80,11 @@ footer #source {
 	margin-right: 2em;
 	font-style: italic;
 }
+
+.email-split {
+	display: none;
+}
+
+.email-split + span::before {
+	content: '@';
+}
