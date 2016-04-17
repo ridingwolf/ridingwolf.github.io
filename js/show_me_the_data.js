@@ -68,6 +68,7 @@ function formatEmail(data){
 function formatString(data){ 
 	if(!data)
 		return '';
+	
 	if(isEmail(data))
 		return formatEmail(data);
 
