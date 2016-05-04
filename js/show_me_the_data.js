@@ -91,9 +91,9 @@ function formatData(data){
 }
 
 function render(data){
-	document
-		.getElementById('resume')
-		.innerHTML = 'Curriculum vitae'.in('<h1>') + 
+	var resume = document.getElementById('loading-screen');
+	resume.setAttribute('id', 'resume')
+	resume.innerHTML = 'Curriculum vitae'.in('<h1>') + 
 			getKeys(data)
 			.render(function renderSection(name){ 
 				var sectionContent = name.in('<h2>') + formatData(data[name]);
