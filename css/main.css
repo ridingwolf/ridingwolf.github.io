@@ -72,13 +72,14 @@ footer {
 	position: fixed;
 	top: 100%;
 	width: 100%;
-	margin-top: -2em;
+	margin-top: -3em;
 }
 
 footer #source {
 	float: right;
-	margin-right: 2em;
+	margin-right: 1em;
 	font-style: italic;
+	font-size: 2em;
 }
 
 .email-split {
