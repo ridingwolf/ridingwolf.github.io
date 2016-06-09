@@ -61,8 +61,8 @@
 		"MVC", "TDD", "Software craft-journeyman", "Linux", "Windows",  "Android"
 	],
 	"Activities" : {
-		"Participated" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat"],
-		"Planned" : ["SoCrates UK", "Coderdojo"]
+		"Participated" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat", "SoCraTes Be", "SoCraTes UK"],
+		"Planned" : ["Coderdojo"]
 	},
 	"Hobbies" : [
 		"Reading", "Board gaming", "Wargaming", "Snowboarding", "Motorbike riding", "Being an idiot"
