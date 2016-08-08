@@ -102,11 +102,15 @@ function render(data){
 }
 
 function usesInternetExploder(){
-	return navigator.appName == "Microsoft Internet Explorer" || (navigator.appName == "Netscape" && navigator.appVersion.indexOf("Trident") >= 0);
+	return false;
+	//return navigator.appName == "Microsoft Internet Explorer" || (navigator.appName == "Netscape" && navigator.appVersion.indexOf("Trident") >= 0);
 }
 
 function showErrorMessage(message){
-	console.log(message);
+	var warning = document.getElementById('loading-screen');
+	warning.innerHTML = message;
+	warning.removeAttribute('id');
+	warning.setAttribute('class', 'warning');
 }
 
 (function automaticloading(){
@@ -114,12 +118,12 @@ function showErrorMessage(message){
 		setPageTitle(data);
 		try{
 			if(usesInternetExploder())
-				showErrorMessage("this is IE, placeholder");
+				showErrorMessage('This site is not supported in Internet Explorer. <br/><br/>Please upgrade to <em>Microsoft Edge</em> or use a <em>different browser</em> to view this content.');
 			else
 				render(data);
 
 		} catch (exception) {
-			showErrorMessage(exception);
+			showErrorMessage('Something went wrong. <br/><br/>Please <a href="https://github.com/ridingwolf/ridingwolf.github.io/issues">log the issue</a>, so I can fix it. <br/><br/>Error:<br/>' + exception);
 		}
 	});
 })();

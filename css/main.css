@@ -3,6 +3,7 @@
 @import url('bigPaper.css') (max-width: 900px),(orientation:portrait);
 @import url('print.css') print, (max-width: 480px);
 @import url('sectionSpecific.css');
+@import url('warning.css');
 
 #resume {
 	margin: 0 25%; 
