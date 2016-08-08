@@ -101,9 +101,25 @@ function render(data){
 		});
 }
 
+function usesInternetExploder(){
+	return navigator.appName == "Microsoft Internet Explorer" || (navigator.appName == "Netscape" && navigator.appVersion.indexOf("Trident") >= 0);
+}
+
+function showErrorMessage(message){
+	console.log(message);
+}
+
 (function automaticloading(){
 	loadResumeData(function processData(data){
 		setPageTitle(data);
-		render(data);
+		try{
+			if(usesInternetExploder())
+				showErrorMessage("this is IE, placeholder");
+			else
+				render(data);
+
+		} catch (exception) {
+			showErrorMessage(exception);
+		}
 	});
 })();
