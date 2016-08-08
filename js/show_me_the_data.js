@@ -107,10 +107,13 @@ function usesInternetExploder(){
 }
 
 function showErrorMessage(message){
-	var warning = document.getElementById('loading-screen');
-	warning.innerHTML = message;
+	var warning = document.getElementById('loading-screen') || document.getElementById('resume');
+	if(null == warning)
+		alert('Something went horribly wrong, could not find warning box.');
+
 	warning.removeAttribute('id');
 	warning.setAttribute('class', 'warning');
+	warning.innerHTML = message;
 }
 
 (function automaticloading(){
