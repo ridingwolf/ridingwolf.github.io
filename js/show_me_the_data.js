@@ -126,7 +126,11 @@ function showErrorMessage(message){
 				render(data);
 
 		} catch (exception) {
-			showErrorMessage('Something went wrong. <br/><br/>Please <a href="https://github.com/ridingwolf/ridingwolf.github.io/issues">log the issue</a>, so I can fix it. <br/><br/>Error:<br/>' + exception);
+			var errorMessage = 'Something went wrong.<br/><br/>' + 
+								'Please <a href="https://github.com/ridingwolf/ridingwolf.github.io/issues">log the issue</a>, so I can fix it.<br/><br/>' +
+								'<em>Error:</em> ' + exception + '<br/>' +
+								'<em>Browser:</em> ' + navigator.appName + ';' + navigator.appVersion;
+			showErrorMessage(errorMessage);
 		}
 	});
 })();
