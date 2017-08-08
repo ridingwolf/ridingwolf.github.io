@@ -1,6 +1,9 @@
 *.nosync
+.DS_Store
 
 # Elm #
 # Created by https://www.gitignore.io/api/elm
 elm-stuff/
 repl-temp-*
+
+
