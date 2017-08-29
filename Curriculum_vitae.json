@@ -7,8 +7,8 @@
 			"Place" : "Gent"
 		},
 		"Email" : "wouter.de.rijck@gmail.com",
-		"Phone" : "+32 (0)499 345 876"
-
+		"Twitter" : "@ridingwolf",
+		"Github" : "ridingwolf"
 	},
 	"Education" : [	
 		{
@@ -33,8 +33,14 @@
 	],
 	"Experience" : [
 		{
+			"Company" : "Aaltra",
+			"Period" : "November 2016 - ongoing",
+			"Function" : "Developer (full stack)",
+			"Stack" : ["C#", "swift", "javascript", "MS SQL", "less", "grunt"]
+		},
+		{
 			"Company" : "iChoosr",
-			"Period" : "August 2012 - ongoing",
+			"Period" : "August 2012 - October 2016",
 			"Function" : "Developer (full stack)",
 			"Stack" : ["C#", "Nhibernate", "Spark view engie", "Castle Monorail(MVC)", "Rake", "sass", "Javascript (client/server side)", "MySql"]
 		},
@@ -61,8 +67,8 @@
 		"MVC", "TDD", "Software craft-journeyman", "Linux", "Windows",  "Android", "lean", "agile"
 	],
 	"Activities" : {
-		"Participated" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat", "SoCraTes Be", "SoCraTes UK"],
-		"Planned" : ["Coderdojo"]
+		"Participated" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat", "SoCraTes Be", "SoCraTes UK", "CoderDOjo", "Socrates De", "ELM meetup"],
+		"Planned" : ["DDE Europe", "The joy of coding"]
 	},
 	"Hobbies" : [
 		"Reading", "Board gaming", "Wargaming", "Snowboarding", "Motorbike riding", "Being an idiot"
