@@ -63,10 +63,10 @@
 	],
 	"Buzz words" : [
 		"C#", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "hmtl", 
-		"MVC", "TDD", "Software craft-journeyman", "Linux", "Windows",  "Android", "lean", "agile"
+		"MVC", "TDD", "Software craft-journeyman", "Linux", "Windows",  "Android", "lean", "agile", "swift"
 	],
 	"Activities" : {
-		"Participated" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat", "SoCraTes Be", "SoCraTes UK", "CoderDOjo", "Socrates De", "ELM meetup"],
+		"Participated" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be,UK,De)", "CoderDojo", "ELM meetup"],
 		"Planned" : ["DDE Europe", "The joy of coding"]
 	},
 	"Hobbies" : [
