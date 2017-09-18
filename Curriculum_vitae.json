@@ -32,8 +32,14 @@
 	],
 	"Experience" : [
 		{
+			"Company" : "Small Town Heroes",
+			"Period" : "September 2017 - ongoing",
+			"Function" : "Developer",
+			"Stack" : ["node.js"]
+		},
+		{
 			"Company" : "Aaltra",
-			"Period" : "November 2016 - ongoing",
+			"Period" : "November 2016 - September 2017",
 			"Function" : "Developer (full stack)",
 			"Stack" : ["C#", "swift", "javascript", "MS SQL", "less", "grunt"]
 		},
