@@ -1,7 +1,7 @@
 {
 	"Personal Summary" : {
 		"Name" : "Wouter De Rijck",
-		"Address" : "Wetteren, België, Gaia",
+		"Address" : "Wetteren, Belgium, Europe, Earth",
 		"Birth" : {
 			"Date" : "1981-11-18T18:30:00.000Z",
 			"Place" : "Gent"
@@ -35,7 +35,7 @@
 			"Company" : "Small Town Heroes",
 			"Period" : "September 2017 - ongoing",
 			"Function" : "Developer",
-			"Stack" : ["node.js"]
+			"Stack" : ["node.js", "React native", "docker", "objective-C", "Java"]
 		},
 		{
 			"Company" : "Aaltra",
@@ -68,12 +68,13 @@
 		{ "Language" : "French" , "Level" : "rusty"}
 	],
 	"Buzz words" : [
-		"C#", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "hmtl", 
-		"MVC", "TDD", "Software craft-journeyman", "Linux", "Windows",  "Android", "lean", "agile", "swift"
+		"C#", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "sass/scss", "hmtl", 
+		"MVC", "TDD", "Software craft-journeyman", "Linux", "Windows", "Mac OSX", "Android", "agile", "swift",
+		"React native", "Redux", "Domain Driven Design", "fishshell", "scratch"
 	],
 	"Activities" : {
-		"Participated" : ["Codefreeze", "Software craftmanship open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be,UK,De)", "CoderDojo", "ELM meetup"],
-		"Planned" : ["DDE Europe", "The joy of coding"]
+		"Participated" : ["Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be,UK,De)", "CoderDojo", "ELM meetup", "DDD Be"],
+		"Planned" : ["European testing conference", "The joy of coding", "DDE Europe"]
 	},
 	"Hobbies" : [
 		"Reading", "Board gaming", "Wargaming", "Snowboarding", "Motorbike riding", "Being an idiot"
