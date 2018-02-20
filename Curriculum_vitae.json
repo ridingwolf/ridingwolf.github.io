@@ -45,13 +45,13 @@
 		},
 		{
 			"Company" : "iChoosr",
-			"Period" : "August 2012 - October 2016",
+			"Period" : "August 2011 - October 2016",
 			"Function" : "Developer (full stack)",
 			"Stack" : ["C#", "Nhibernate", "Spark view engie", "Castle Monorail(MVC)", "Rake", "sass", "Javascript (client/server side)", "MySql"]
 		},
 		{
 			"Company" : "MMPCS",
-			"Period" : "January 2010 - July 2012",
+			"Period" : "January 2010 - July 2011",
 			"Function" : "Junior Developer",
 			"Stack" : ["VB", "C#", "POS for .NET", "WPF", "Win-forms", "T-SQL"]
 		},
