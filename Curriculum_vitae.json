@@ -73,8 +73,8 @@
 		"React native", "Redux", "Domain Driven Design", "fishshell", "scratch"
 	],
 	"Activities" : {
-		"Participated" : ["Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be,UK,De)", "CoderDojo", "ELM meetup", "DDD Be"],
-		"Planned" : ["European testing conference", "The joy of coding", "DDD Europe"]
+		"Participated" : ["Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be,UK,De)", "CoderDojo", "ELM meetup", "DDD Be", "European testing conference"],
+		"Planned" : ["The joy of coding", "DDD Europe"]
 	},
 	"Hobbies" : [
 		"Reading", "Board gaming", "Wargaming", "Snowboarding", "Motorbike riding", "Being an idiot"
