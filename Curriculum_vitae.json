@@ -32,8 +32,14 @@
 	],
 	"Experience" : [
 		{
+			"Company" : "Informatie Vlaanderen",
+			"Period" : "March 2018 - October 2018",
+			"Function" : "Developer",
+			"Stack" : ["C#", ".net core", "vue.js", "docker", "event-sourcing"]
+		},
+		{
 			"Company" : "Small Town Heroes",
-			"Period" : "September 2017 - ongoing",
+			"Period" : "September 2017 - March 2018",
 			"Function" : "Developer",
 			"Stack" : ["node.js", "React native", "docker", "objective-C", "Java"]
 		},
