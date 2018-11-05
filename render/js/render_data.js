@@ -2,7 +2,7 @@ function loadResumeData(callback) {
 	// nicked from http://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
     var request = new XMLHttpRequest();
     request.overrideMimeType("application/json");
-    request.open('GET', '../Curriculum_vitae.json', true); 
+    request.open('GET', '../../Curriculum_vitae.json', true); 
     request.onreadystatechange = function () {
           if (request.readyState == 4 && request.status == "200") {
             callback(JSON.parse(request.responseText));
