@@ -1,3 +1,12 @@
+import {
+	createDiv,
+	createHtmlTag,
+ } from './htmlRendering.js';
+
+import { 
+	formatString,
+} from './formatters.js';
+
 function loadResumeData(callback) {
 	// nicked from http://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
     var request = new XMLHttpRequest();
@@ -13,10 +22,6 @@ function loadResumeData(callback) {
 
 Array.prototype.render = function(formatData) {
 	return this.map(formatData).join('');
-}
-
-String.prototype.in = function (element) {
-	return element + this + element.replace(/^<([a-z0-9]+).*>$/gi, '</$1>');
 }
 
 String.prototype.toClassName = function(){
@@ -38,46 +43,28 @@ function formatArray(data){
 		return '';
 
 	if(typeof data[0] === 'string')
-		return data
-			.render(function(item){ return item.in('<div class="item">'); })
-			.in('<div class="simple-list">');
+		return createDiv(
+			data.render(item => createDiv(item, { class: "item" })),
+			{ class: "simple-list" }
+		);
 			
-	return data.render(formatData).in('<div class="complex-list">');
+	return createDiv(data.render(formatData), { class: "complex-list" });
 }
 
 function formatObject(data){
 	if(!data)
 		return '';
 
-	return getKeys(data)
-		.render(function (name) {
-			var objContent = 	name.in('<div class="name ' + name.toClassName() + '">') + 
-								formatData(data[name]).in('<div class="content ' + name.toClassName() + '">');
-		return 	objContent.in('<div class="object-property">');
-	}).in('<div class="object">');
-}
-
-function isEmail(data){
-	return data.match(/^[^@]+@([a-z0-9]+\.)+[a-z0-9]+$/);
-}
-
-function formatEmail(data){
-	return data.replace(/^([^@]+)@(.+)/, '<span>$1</span><span class="email-split"> keep crawling little bots </span><span>$2</span>');
-}
-
-function formatString(data){ 
-	if(!data)
-		return '';
-	
-	if(isEmail(data))
-		return formatEmail(data);
-
-	// chrome casts an string "month year" to a date, day 1 of that month, which gives wrong output
-	var date = new Date(data);
-	if(date !== "Invalid Date" && !isNaN(date) && date.getDate() !== 1)
-		return date.toLocaleString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
-
-	return data; 
+	return createDiv(
+		getKeys(data).render(name =>
+			createDiv( 	
+				createDiv(name, { class: `name ${name.toClassName()}`}) + 
+				createDiv(formatData(data[name]), { class: `content ${name.toClassName()}` }),
+				{ class: "object-property" }
+			),
+			{ class: "object"}
+		)
+	);
 }
 
 var formatters = {
@@ -93,12 +80,16 @@ function formatData(data){
 function render(data){
 	var resume = document.getElementById('loading-screen');
 	resume.setAttribute('id', 'resume')
-	resume.innerHTML = 'Curriculum vitae'.in('<h1>') + 
-			getKeys(data)
-			.render(function renderSection(name){ 
-				var sectionContent = name.in('<h2>') + formatData(data[name]);
-				return 	sectionContent.in('<div class="section '+ name.toClassName() + '">');
-		});
+	resume.innerHTML = 
+		createHtmlTag('h1', 'Curriculum vitae') + 
+		getKeys(data).render(sectionName => renderSection(sectionName, data[sectionName]));
+}
+
+function renderSection(name, contentData){
+	return createDiv(
+		createHtmlTag('h2', name) + formatData(contentData), 
+		{ class: `section ${name.toClassName()}` }
+	);
 }
 
 function usesInternetExploder(){
