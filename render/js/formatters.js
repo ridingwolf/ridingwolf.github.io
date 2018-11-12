@@ -28,7 +28,11 @@ function formatString(data){
 	return data; 
 }
 
+function formatClassName(name){
+	return (name || '').toLowerCase().replace(/ /, '-');
+}
 
 export {
-    formatString,
+	formatString,
+	formatClassName,
 }

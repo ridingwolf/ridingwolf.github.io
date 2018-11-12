@@ -19,7 +19,21 @@ function createDiv(content, attributes){
     return createHtmlTag('div', content, attributes);
 }
 
+function createElements(elements, render){
+    if(!elements || typeof elements  !== 'object')
+        return '';
+
+    const list = Array.isArray(elements)
+        ? elements
+        : Object.keys(elements)
+
+    return list
+        .map(item => render(item))
+        .join('');
+}
+
 export {
     createDiv,
     createHtmlTag,
+    createElements,
 }

@@ -1,10 +1,12 @@
 import {
 	createDiv,
 	createHtmlTag,
+	createElements,
  } from './htmlRendering.js';
 
 import { 
 	formatString,
+	formatClassName,
 } from './formatters.js';
 
 function loadResumeData(callback) {
@@ -20,22 +22,10 @@ function loadResumeData(callback) {
     request.send(null);  
 }
 
-Array.prototype.render = function(formatData) {
-	return this.map(formatData).join('');
-}
-
-String.prototype.toClassName = function(){
-	return this.toLowerCase().replace(/ /, '-');
-}
-
 function setPageTitle(data){
 	document
 		.getElementsByTagName('title')[0]
 		.innerHTML += ': ' + data['Personal Summary']['Name'] || 'Sloppy developer';
-}
-
-function getKeys(data){
-	return Object.keys(data || {});
 }
 
 function formatArray(data){
@@ -44,11 +34,14 @@ function formatArray(data){
 
 	if(typeof data[0] === 'string')
 		return createDiv(
-			data.render(item => createDiv(item, { class: "item" })),
+			createElements(data, item => createDiv(item, { class: "item" })),
 			{ class: "simple-list" }
 		);
 			
-	return createDiv(data.render(formatData), { class: "complex-list" });
+	return createDiv(
+		createElements(data, formatData),
+		{ class: "complex-list" }
+	);
 }
 
 function formatObject(data){
@@ -56,14 +49,22 @@ function formatObject(data){
 		return '';
 
 	return createDiv(
-		getKeys(data).render(name =>
-			createDiv( 	
-				createDiv(name, { class: `name ${name.toClassName()}`}) + 
-				createDiv(formatData(data[name]), { class: `content ${name.toClassName()}` }),
-				{ class: "object-property" }
+		createDiv( 	
+			createElements(
+				data,
+				name =>
+					createDiv(
+						name, 
+						{ class: `name ${formatClassName(name)}`}
+					) + 
+					createDiv(
+						formatData(data[name]), 
+						{ class: `content ${formatClassName(name)}` }
+					)	
 			),
-			{ class: "object"}
-		)
+			{ class: "object-property" }
+		),
+		{ class: "object"}
 	);
 }
 
@@ -82,13 +83,13 @@ function render(data){
 	resume.setAttribute('id', 'resume')
 	resume.innerHTML = 
 		createHtmlTag('h1', 'Curriculum vitae') + 
-		getKeys(data).render(sectionName => renderSection(sectionName, data[sectionName]));
+		createElements(data, sectionName => renderSection(sectionName, data[sectionName]));
 }
 
 function renderSection(name, contentData){
 	return createDiv(
 		createHtmlTag('h2', name) + formatData(contentData), 
-		{ class: `section ${name.toClassName()}` }
+		{ class: `section ${formatClassName(name)}` }
 	);
 }
 
