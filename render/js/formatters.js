@@ -57,20 +57,19 @@ function formatObject(data){
 		return '';
 
 	return createDiv(
-		createDiv( 	
-			createElements(
-				data,
-				name =>
-					createDiv(
-						name, 
-						{ class: `name ${formatClassName(name)}`}
-					) + 
-					createDiv(
-						formatData(data[name]), 
-						{ class: `content ${formatClassName(name)}` }
-					)	
-			),
-			{ class: "object-property" }
+		createElements(
+			data,
+			name => createDiv(
+				createDiv(
+					name, 
+					{ class: `name ${formatClassName(name)}`}
+				) + 
+				createDiv(
+					formatData(data[name]), 
+					{ class: `content ${formatClassName(name)}` }
+				), 
+				{ class: "object-property" }
+			)
 		),
 		{ class: "object"}
 	);
