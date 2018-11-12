@@ -1,4 +1,8 @@
-import { createHtmlTag } from './htmlRendering.js';
+import { 
+	createHtmlTag,
+	createDiv,
+	createElements,
+} from './htmlRendering.js';
 
 function isEmail(str){
 	return str && str.match(/^[^@]+@([a-z0-9]+\.)+[a-z0-9]+$/);
@@ -11,6 +15,10 @@ function formatEmail(email){
         createHtmlTag('span', '$2');
 
 	return email.replace(/^([^@]+)@(.+)/, emailFormat);
+}
+
+function formatClassName(name){
+	return (name || '').toLowerCase().replace(/ /, '-');
 }
 
 function formatString(data){ 
@@ -28,11 +36,70 @@ function formatString(data){
 	return data; 
 }
 
-function formatClassName(name){
-	return (name || '').toLowerCase().replace(/ /, '-');
+function formatArray(data){
+	if((data || []).length === 0)
+		return '';
+
+	if(typeof data[0] === 'string')
+		return createDiv(
+			createElements(data, item => createDiv(item, { class: "item" })),
+			{ class: "simple-list" }
+		);
+			
+	return createDiv(
+		createElements(data, formatData),
+		{ class: "complex-list" }
+	);
+}
+
+function formatObject(data){
+	if(!data)
+		return '';
+
+	return createDiv(
+		createDiv( 	
+			createElements(
+				data,
+				name =>
+					createDiv(
+						name, 
+						{ class: `name ${formatClassName(name)}`}
+					) + 
+					createDiv(
+						formatData(data[name]), 
+						{ class: `content ${formatClassName(name)}` }
+					)	
+			),
+			{ class: "object-property" }
+		),
+		{ class: "object"}
+	);
+}
+
+const defaultFormatters = {
+	'Array' : formatArray,
+	'Object' : formatObject,
+	'String' : formatString
+};
+
+function formatData(data){
+	if(!data)
+		return '';
+
+	const formatter = defaultFormatters[data.constructor.name];
+	return formatter ? formatter(data) : '';
+}
+
+function formatSection(sectionName, sectionData){
+	return createDiv(
+		createHtmlTag('h2', sectionName) + formatData(sectionData), 
+		{ class: `section ${formatClassName(sectionName)}` }
+	);
+
 }
 
 export {
-	formatString,
 	formatClassName,
+	formatData,
+	formatSection,
 }

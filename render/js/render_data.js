@@ -1,12 +1,10 @@
 import {
-	createDiv,
 	createHtmlTag,
 	createElements,
  } from './htmlRendering.js';
 
 import { 
-	formatString,
-	formatClassName,
+	formatSection,
 } from './formatters.js';
 
 function loadResumeData(callback) {
@@ -28,69 +26,12 @@ function setPageTitle(data){
 		.innerHTML += ': ' + data['Personal Summary']['Name'] || 'Sloppy developer';
 }
 
-function formatArray(data){
-	if((data || []).length === 0)
-		return '';
-
-	if(typeof data[0] === 'string')
-		return createDiv(
-			createElements(data, item => createDiv(item, { class: "item" })),
-			{ class: "simple-list" }
-		);
-			
-	return createDiv(
-		createElements(data, formatData),
-		{ class: "complex-list" }
-	);
-}
-
-function formatObject(data){
-	if(!data)
-		return '';
-
-	return createDiv(
-		createDiv( 	
-			createElements(
-				data,
-				name =>
-					createDiv(
-						name, 
-						{ class: `name ${formatClassName(name)}`}
-					) + 
-					createDiv(
-						formatData(data[name]), 
-						{ class: `content ${formatClassName(name)}` }
-					)	
-			),
-			{ class: "object-property" }
-		),
-		{ class: "object"}
-	);
-}
-
-var formatters = {
-	'Array' : formatArray,
-	'Object' : formatObject,
-	'String' : formatString
-};
-
-function formatData(data){
-	return data ? formatters[data.constructor.name](data) : '';
-}
-
 function render(data){
 	var resume = document.getElementById('loading-screen');
 	resume.setAttribute('id', 'resume')
 	resume.innerHTML = 
 		createHtmlTag('h1', 'Curriculum vitae') + 
-		createElements(data, sectionName => renderSection(sectionName, data[sectionName]));
-}
-
-function renderSection(name, contentData){
-	return createDiv(
-		createHtmlTag('h2', name) + formatData(contentData), 
-		{ class: `section ${formatClassName(name)}` }
-	);
+		createElements(data, sectionName => formatSection(sectionName, data[sectionName]));
 }
 
 function usesInternetExploder(){
