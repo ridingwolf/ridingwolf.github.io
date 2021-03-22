@@ -6,7 +6,7 @@
 			"Date" : "1981-11-18T18:30:00.000Z",
 			"Place" : "Gent"
 		},
-		"Email" : "wouter.de.rijck@gmail.com",
+		"Email" : "json-resume@wolfcraft.io",
 		"Twitter" : "@ridingwolf"
 	},
 	"Education" : [	
@@ -31,6 +31,12 @@
 		}
 	],
 	"Experience" : [
+		{
+			"Company" : "Informatie Vlaanderen",
+			"Period" : "Devember 2018 - March 2021",
+			"Function" : "Developer",
+			"Stack" : ["C#", ".net core", "vue.js", "docker", "event-sourcing"]
+		},
 		{
 			"Company" : "Informatie Vlaanderen",
 			"Period" : "March 2018 - October 2018",
@@ -76,11 +82,11 @@
 	"Buzz words" : [
 		"C#", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "sass/scss", "hmtl", 
 		"MVC", "TDD", "Software craft-journeyman", "Linux", "Windows", "Mac OSX", "Android", "agile", "swift",
-		"React native", "Redux", "Domain Driven Design", "fishshell", "scratch"
+		"React native", "Redux", "vue.js", "Domain Driven Design", "fishshell", "scratch"
 	],
 	"Activities" : {
-		"Participated" : ["Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be,UK,De)", "CoderDojo", "ELM meetup", "DDD Be", "European testing conference"],
-		"Planned" : ["The joy of coding", "DDD Europe"]
+		"Participated" : ["Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be, UK, De, Ca, Fr)", "CoderDojo", "DDD Be", "DDD Europe", "European testing conference", "The Joy of coding"],
+		"Planned" : []
 	},
 	"Hobbies" : [
 		"Reading", "Board gaming", "Wargaming", "Snowboarding", "Motorbike riding", "Being an idiot"
