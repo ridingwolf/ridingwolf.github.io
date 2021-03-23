@@ -33,13 +33,7 @@
 	"Experience" : [
 		{
 			"Company" : "Informatie Vlaanderen",
-			"Period" : "Devember 2018 - March 2021",
-			"Function" : "Developer",
-			"Stack" : ["C#", ".net core", "vue.js", "docker", "event-sourcing"]
-		},
-		{
-			"Company" : "Informatie Vlaanderen",
-			"Period" : "March 2018 - October 2018",
+			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
 			"Stack" : ["C#", ".net core", "vue.js", "docker", "event-sourcing"]
 		},
