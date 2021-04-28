@@ -1,13 +1,17 @@
-#resume, #resume:before, #resume:after {
-	border: none !important;
-	box-shadow: none !important;
+body {
+	background-color: #ffffff !important;
 }
 
 #resume {
-	margin: 0 !important;
-	width: 95% !important;
+	border: none !important;
+	box-shadow: none !important;
+	background-color: #ffffff !important;
+}
+
+#resume:before, #resume:after {
+	display: none i !important;
 }
 
 #source {
-	display: none;
+	display: none i !important;
 }

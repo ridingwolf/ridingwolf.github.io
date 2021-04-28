@@ -1,12 +1,22 @@
-@import url('spinner.css');
-@import url('paperlook.css');
-@import url('bigPaper.css') (max-width: 900px),(orientation:portrait);
-@import url('print.css') print, (max-width: 480px);
-@import url('sectionSpecific.css');
-@import url('warning.css');
+@import url('./spinner.css');
+@import url('./theme.css');
+@import url('./paperlook.css');
+@import url('./sectionSpecific.css');
+@import url('./warning.css');
 
-#resume {
-	margin: 50px 25%;
+@import url('./print.css') print;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
 div {

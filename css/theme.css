@@ -1,0 +1,9 @@
+  
+:root {
+    --main-color: #B0C4DE;
+    --background-color: #333333;
+}
+
+body {
+    background-color: var(--background-color);
+}
