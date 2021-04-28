@@ -6,12 +6,13 @@ body {
 	border: none !important;
 	box-shadow: none !important;
 	background-color: #ffffff !important;
+	margin: 0 !important;
 }
 
 #resume:before, #resume:after {
-	display: none i !important;
+	display: none !important;
 }
 
 #source {
-	display: none i !important;
+	display: none !important;
 }
