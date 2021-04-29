@@ -28,8 +28,6 @@
 {
 	left: 0;
 	top: 0;
-	-webkit-transform: rotateZ(2.5deg);
-	-o-transform: rotate(2.5deg);
 	transform: rotateZ(2.5deg);
 	z-index: -1;
 }
@@ -38,8 +36,6 @@
 {
 	left: 10px;
 	top: 20px;
-	-webkit-transform: rotateZ(-2.5deg);
-	-o-transform: rotate(-2.5deg);
 	transform: rotateZ(-2.5deg);
 	z-index: -2;
 }

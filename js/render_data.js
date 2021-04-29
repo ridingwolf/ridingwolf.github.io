@@ -2,6 +2,7 @@ import {
 	createHtmlTag,
 	createElements,
  } from './htmlRendering.js';
+ import { renderStamp } from './svgAssets.js'
 
 import { 
 	formatSection,
@@ -30,6 +31,7 @@ function render(data){
 	var resume = document.getElementById('loading-screen');
 	resume.setAttribute('id', 'resume')
 	resume.innerHTML = 
+		createHtmlTag('a', renderStamp(), { href: 'https://wolfcraft.io', class: 'home-link' }) +
 		createHtmlTag('h1', 'Curriculum vitae') + 
 		createElements(data, sectionName => formatSection(sectionName, data[sectionName]));
 }

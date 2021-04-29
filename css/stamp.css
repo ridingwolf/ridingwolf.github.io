@@ -1,0 +1,47 @@
+.wolfcraft-stamp {
+    --stamp-color: darkred;
+    --stamp-angle: 35deg;
+    --stamp-transition-time: 0.5s;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: -3%;
+
+    transform: rotate(var(--stamp-angle));
+    transition: transform var(--stamp-transition-time);
+    
+    /* fade in to hide the rotation that is animated due to 'transition: transform' for the animated scaling */
+    opacity: 0;
+    animation-name: stamp-document;
+    animation-duration: 0.75s;
+    animation-delay: var(--stamp-transition-time);
+    animation-fill-mode: forwards;
+}
+
+.wolfcraft-stamp:hover {
+   transform: scale(0.9) rotate(var(--stamp-angle));
+}
+
+svg.wolfcraft-stamp {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 1.5;
+}
+
+svg.wolfcraft-stamp .fill-non-zero {
+    fill: var(--stamp-color);
+	fill-rule: nonzero;
+}
+
+svg.wolfcraft-stamp .stroke {
+	fill: none;
+	stroke: var(--stamp-color);
+}
+
+@keyframes stamp-document {
+    to {
+        opacity: 1;
+    }
+}
