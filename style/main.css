@@ -29,6 +29,8 @@ h1 {
 	text-align: center;
 	font-family: WolfCraftTitleFont;
 	color: var(--background-color);
+	font-weight: normal;
+	text-decoration: underline;
 	opacity: 0.8;
 }
 
@@ -42,6 +44,7 @@ h1 {
 	font-family: WolfCraftTitleFont;
 	font-style: italic;
 	font-size: 1em;
+	font-weight: normal;
 	color: var(--background-color);
 	opacity: 0.8;
 }
