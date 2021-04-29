@@ -104,6 +104,9 @@ footer #source {
 	margin-right: 1em;
 	font-style: italic;
 	font-size: 2em;
+	text-decoration: none;
+	font-family: WolfCraftTitleFont;
+	color: var(--main-color);
 }
 
 .email-split {
