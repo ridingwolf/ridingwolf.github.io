@@ -68,6 +68,7 @@
 		}
 
 	],
+	"Photography" : ["Event/Documemtary", "Business portraits", "Custom prints"],
 	"Languages" : [
 		{ "Language" : "Dutch" , "Level" : "native"},
 		{ "Language" : "English" , "Level" : "very good"},
