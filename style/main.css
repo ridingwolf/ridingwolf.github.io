@@ -27,6 +27,9 @@ div {
 
 h1 {
 	text-align: center;
+	font-family: WolfCraftTitleFont;
+	color: var(--background-color);
+	opacity: 0.8;
 }
 
 .section {
@@ -36,6 +39,11 @@ h1 {
 
 .section h2 {
 	margin: 5px -15px;
+	font-family: WolfCraftTitleFont;
+	font-style: italic;
+	font-size: 1em;
+	color: var(--background-color);
+	opacity: 0.8;
 }
 
 .object-property {
