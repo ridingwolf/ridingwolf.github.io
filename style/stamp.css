@@ -4,8 +4,9 @@
     --stamp-transition-time: 0.5s;
     width: 30%;
     position: absolute;
-    top: 0;
-    right: -3%;
+    top: 1%;
+    right: -2%;
+    z-index: 1;
 
     transform: rotate(var(--stamp-angle));
     transition: transform var(--stamp-transition-time);

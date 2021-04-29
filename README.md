@@ -1,6 +1,8 @@
-### [Visit the generated page](http://ridingwolf.github.io) ###
+### [cv.wolfcaft.io](http://ridingwolf.github.io)
 
-- Do you think there is an important item missing?
-- Did you spot a huge error and are kind enough to let me know.
+Render a printable cv form the Curriculum_vitae.json data using javascript
 
-Feel free to make a _pull request_ to change that injustice.
+- bugs can be flagged as [issues](https://github.com/ridingwolf/ridingwolf.github.io/issues)
+- pull request to fix missing or invalid data will be accepted
+
+_thank you for visiting_
