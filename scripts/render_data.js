@@ -24,7 +24,7 @@ function loadResumeData(callback) {
 function setPageTitle(data){
 	document
 		.getElementsByTagName('title')[0]
-		.innerHTML += ': ' + data['Personal Summary']['Name'] || 'Sloppy developer';
+		.innerHTML += ' - ' + data['Personal Summary']['Name'] || 'Sloppy developer';
 }
 
 function render(data){
