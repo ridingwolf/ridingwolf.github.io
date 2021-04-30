@@ -11,9 +11,10 @@
 {
 	position: relative;
 	max-width: 50rem;
-	padding: 2rem;
+	padding: 2rem 2rem 4rem 2rem;
 	min-height: 75vh;
 	margin: min(10vh, 10vw);
+
 }
 
 
@@ -28,7 +29,7 @@
 {
 	left: 0;
 	top: 0;
-	transform: rotateZ(2.5deg);
+	transform: rotateZ(2deg);
 	z-index: -1;
 }
 
@@ -36,6 +37,6 @@
 {
 	left: 10px;
 	top: 20px;
-	transform: rotateZ(-2.5deg);
+	transform: rotateZ(-1.5deg);
 	z-index: -2;
 }
