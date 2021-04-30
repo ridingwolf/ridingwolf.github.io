@@ -1,3 +1,16 @@
 .section.activities .object .object-property .name {
 	display: block;
 }
+
+.section.activities .name {
+	font-style: italic;
+}
+
+.section.activities .content {
+	margin-left: 2rem;
+	clear: left;
+}
+
+.section.activities .object .object-property + .object-property {
+	margin-top: 0.25rem;
+}

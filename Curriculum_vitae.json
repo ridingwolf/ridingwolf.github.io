@@ -81,7 +81,7 @@
 	],
 	"Activities" : {
 		"Participated" : ["Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be, UK, De, Ca, Fr)", "CoderDojo", "DDD Be", "DDD Europe", "European testing conference", "The Joy of coding"],
-		"Planned" : []
+		"Planned" : ["Event Sourcing Live"]
 	},
 	"Hobbies" : [
 		"Reading", "Board gaming", "Wargaming", "Snowboarding", "Motorbike riding", "Being an idiot"
