@@ -35,7 +35,7 @@
 			"Company" : "Informatie Vlaanderen",
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
-			"Stack" : ["C#", ".net core", "vue.js", "docker", "event-sourcing"]
+			"Stack" : ["C#", "F#", ".net core", "vue.js", "docker", "event-sourcing"]
 		},
 		{
 			"Company" : "Small Town Heroes",
