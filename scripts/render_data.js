@@ -2,11 +2,9 @@ import {
 	createHtmlTag,
 	createElements,
  } from './htmlRendering.js';
- import { renderStamp } from './svgAssets.js'
-
-import { 
-	formatSection,
-} from './formatters.js';
+import { renderStamp } from './svgAssets.js';
+import { getCustomFormattersForSection } from './customFormatters.js';
+import { formatSection } from './formatters.js';
 
 function loadResumeData(callback) {
 	// nicked from http://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
@@ -33,7 +31,7 @@ function render(data){
 	resume.innerHTML = 
 		createHtmlTag('a', renderStamp(), { href: 'https://wolfcraft.io', class: 'home-link' }) +
 		createHtmlTag('h1', 'Curriculum vitae') + 
-		createElements(data, sectionName => formatSection(sectionName, data[sectionName]));
+		createElements(data, sectionName => formatSection(sectionName, data[sectionName], getCustomFormattersForSection(sectionName)));
 }
 
 function usesInternetExploder(){

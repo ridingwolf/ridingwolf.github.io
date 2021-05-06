@@ -89,16 +89,21 @@ function formatData(data){
 	return formatter ? formatter(data) : '';
 }
 
-function formatSection(sectionName, sectionData){
+function formatSectionHeader(sectionName){
+	return createHtmlTag('h2', sectionName);
+}
+
+function formatSection(sectionName, sectionData, customFormatters = {}){
+	const { formatHeader = formatSectionHeader } = customFormatters;
 	return createDiv(
-		createHtmlTag('h2', sectionName) + formatData(sectionData), 
+		formatHeader(sectionName) + formatData(sectionData),
 		{ class: `section ${formatClassName(sectionName)}` }
 	);
-
 }
 
 export {
 	formatClassName,
 	formatData,
+	formatSectionHeader,
 	formatSection,
 }
