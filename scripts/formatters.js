@@ -42,7 +42,7 @@ function formatArray(data){
 
 	if(typeof data[0] === 'string')
 		return createDiv(
-			createElements(data, item => createDiv(item, { class: "item" })),
+			createElements(data, item => createDiv(formatString(item), { class: "item" })),
 			{ class: "simple-list" }
 		);
 			
