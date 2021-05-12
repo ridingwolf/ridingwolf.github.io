@@ -128,3 +128,8 @@ footer #source {
 .email-split + span::before {
 	content: '@';
 }
+
+.data-url {
+	text-decoration: none;
+	color: inherit;
+}

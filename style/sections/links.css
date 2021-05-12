@@ -1,0 +1,8 @@
+.section.links .simple-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.section.links .simple-list .item::after {
+	display: none;
+}

@@ -24,3 +24,12 @@
 .section.experience .stack {
 	font-style: italic;
 }
+
+.section.experience .name.public-sources {
+	display: block;
+	font-style: italic;
+}
+
+.section.experience .public-sources {
+	font-size: 0.85em;
+}

@@ -28,6 +28,9 @@ function formatString(data){
 	if(isEmail(data))
 		return formatEmail(data);
 
+	if(data.match(/https?:\/\//i))
+		return createHtmlTag('a', data, { href: data, class: 'data-url', target: '_blank' });
+
 	// chrome casts an string "month year" to a date, day 1 of that month, which gives wrong output
 	var date = new Date(data);
 	if(date !== "Invalid Date" && !isNaN(date) && date.getDate() !== 1)
