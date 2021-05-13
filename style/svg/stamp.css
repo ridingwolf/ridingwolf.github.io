@@ -33,11 +33,9 @@ svg.wolfcraft-stamp {
 
 svg.wolfcraft-stamp .fill-non-zero {
     fill: var(--stamp-color);
-	fill-rule: nonzero;
 }
 
 svg.wolfcraft-stamp .stroke {
-	fill: none;
 	stroke: var(--stamp-color);
 }
 

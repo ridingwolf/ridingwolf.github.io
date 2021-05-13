@@ -1,0 +1,9 @@
+@import url('./stamp.css');
+
+svg .fill-non-zero {
+    fill-rule: nonzero;
+}
+
+svg .stroke {
+	fill: none;
+}
