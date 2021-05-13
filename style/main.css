@@ -2,8 +2,8 @@
 @import url('./spinner.css');
 @import url('./theme.css');
 @import url('./paperlook.css');
-@import url('./svg/_main.css');
-@import url('./sections/_main.css');
+@import url('./svg/main.css');
+@import url('./sections/main.css');
 @import url('./warning.css');
 
 @import url('./print.css') print;
