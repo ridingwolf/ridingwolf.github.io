@@ -1,4 +1,5 @@
 @import url('./stamp.css');
+@import url('./printer.css');
 
 svg .fill-non-zero {
     fill-rule: nonzero;

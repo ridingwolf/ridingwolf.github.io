@@ -2,9 +2,13 @@ import {
 	createHtmlTag,
 	createElements,
  } from './htmlRendering.js';
-import { renderStamp } from './svgAssets.js';
+import {
+	renderPrintIcon,
+	renderStamp,
+} from './svgAssets.js';
 import { getCustomFormattersForSection } from './customFormatters.js';
 import { formatSection } from './formatters.js';
+import initializeBehaviours from './behaviour.js';
 
 function loadResumeData(callback) {
 	// nicked from http://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
@@ -31,7 +35,10 @@ function render(data){
 	resume.innerHTML = 
 		createHtmlTag('a', renderStamp(), { href: 'https://wolfcraft.io', class: 'home-link' }) +
 		createHtmlTag('h1', 'Curriculum vitae') + 
-		createElements(data, sectionName => formatSection(sectionName, data[sectionName], getCustomFormattersForSection(sectionName)));
+		createElements(data, sectionName => formatSection(sectionName, data[sectionName], getCustomFormattersForSection(sectionName))) +
+		renderPrintIcon(['behaviour-not-defined']);
+
+	initializeBehaviours();
 }
 
 function usesInternetExploder(){
@@ -56,7 +63,6 @@ function showErrorMessage(message){
 				showErrorMessage('This site is not supported in Internet Explorer. <br/><br/>Please upgrade to <em>Microsoft Edge</em> or use a <em>different browser</em> to view this content.');
 			else
 				render(data);
-
 		} catch (exception) {
 			var errorMessage = 'Something went wrong.<br/><br/>' + 
 								'Please <a href="https://github.com/ridingwolf/ridingwolf.github.io/issues">log the issue</a>, so I can fix it.<br/><br/>' +

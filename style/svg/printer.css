@@ -1,0 +1,46 @@
+
+svg.icon.printer {
+    --print-color: #444444;
+    --paper-color: #ffffff;
+    --printer-color: var(--background-color);
+
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    stroke-linecap: square;
+    stroke-linejoin: round;
+    stroke-miterlimit: 1.5;
+
+    height: 4rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    transition: transform 0.5s;
+}
+
+svg.icon.printer.behaviour-not-defined {
+    display: none !important;
+}
+
+svg.icon.printer:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+svg.icon.printer .fill-non-zero {
+    fill: var(--printer-color);
+}
+
+svg.icon.printer .stroke {
+	stroke: var(--printer-color);
+    stroke-linecap: round;
+}
+
+svg.icon.printer .paper {
+    fill: var(--paper-color);
+    stroke: var(--print-color);
+    stroke-width:1px;
+}
+
+svg.icon.printer .printed-paper .fill-non-zero {
+    fill: var(--print-color);
+}

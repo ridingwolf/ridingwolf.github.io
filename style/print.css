@@ -16,3 +16,7 @@ body {
 #source {
 	display: none !important;
 }
+
+svg.icon.printer {
+	display: none !important;
+}
