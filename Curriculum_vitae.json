@@ -36,13 +36,15 @@
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
 			"Stack" : ["C#", "F#", ".net core", "vue.js", "docker", "event-sourcing"],
+			"Description": "Moving the building & address registry from a single database with many services directly accessing the database, to a maintainable distrubited event-sourced system with managed APIs",
 			"Project source": "https://github.com/search?q=topic%3Abase-registries&type=repositories"
 		},
 		{
 			"Company" : "Small Town Heroes",
 			"Period" : "September 2017 - March 2018",
 			"Function" : "Developer",
-			"Stack" : ["node.js", "React native", "docker", "objective-C", "Java"]
+			"Stack" : ["node.js", "React native", "docker", "objective-C", "Java"],
+			"Description": "Building the new version of the 'Studio 100 Go' app and website"
 		},
 		{
 			"Company" : "Aaltra",
@@ -54,7 +56,8 @@
 			"Company" : "iChoosr",
 			"Period" : "August 2011 - October 2016",
 			"Function" : "Developer (full stack)",
-			"Stack" : ["C#", "Nhibernate", "Spark view engie", "Castle Monorail(MVC)", "Rake", "sass", "Javascript (client/server side)", "MySql"]
+			"Stack" : ["C#", "Nhibernate", "Spark view engie", "Castle Monorail(MVC)", "Rake", "sass", "Javascript (client/server side)", "MySql"],
+			"Description": "Maintaining and expandaning the Groupbuying platfrom with direct feedback from the business"
 		},
 		{
 			"Company" : "MMPCS",

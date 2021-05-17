@@ -25,11 +25,17 @@
 	font-style: italic;
 }
 
-.section.experience .project-source {
-	font-size: 0.85em;
+.section.experience .description {
+	margin: 0.4em;
+	text-align: justify;
 }
 
-.section.experience .project-source::before {
+.section.experience .project-source {
+	font-size: 0.85em;
+	margin: -0.4em 0 0 0.4em;
+}
+
+.section.experience .project-source.content::before {
 	content: "Public source:";
 	font-style: italic;
 	margin-right: 0.5em;
