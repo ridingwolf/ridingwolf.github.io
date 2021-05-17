@@ -4,7 +4,6 @@
 
 .section.experience .object .object-property {
 	clear: none;
-	margin-right: 0.5em; 
 }
 
 .section.experience .object .object-property:nth-child(2) {
@@ -18,21 +17,20 @@
 }
 
 .section.experience .function::before {
-	content: "- ";
+	content: "-";
+	padding: 0 0.5em;
+}
+
+.section.experience .content:not(.company):not(.function):not(.period) {
+	margin: 0.2em 0.4em;
 }
 
 .section.experience .stack {
 	font-style: italic;
 }
 
-.section.experience .description {
-	margin: 0.4em;
-	text-align: justify;
-}
-
 .section.experience .project-source {
 	font-size: 0.85em;
-	margin: -0.4em 0 0 0.4em;
 }
 
 .section.experience .project-source.content::before {
