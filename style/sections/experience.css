@@ -25,11 +25,12 @@
 	font-style: italic;
 }
 
-.section.experience .name.public-sources {
-	display: block;
-	font-style: italic;
+.section.experience .project-source {
+	font-size: 0.85em;
 }
 
-.section.experience .public-sources {
-	font-size: 0.85em;
+.section.experience .project-source::before {
+	content: "Public source:";
+	font-style: italic;
+	margin-right: 0.5em;
 }

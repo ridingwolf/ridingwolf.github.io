@@ -36,7 +36,7 @@
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
 			"Stack" : ["C#", "F#", ".net core", "vue.js", "docker", "event-sourcing"],
-			"Public sources": "https://github.com/search?q=topic%3Abase-registries&type=repositories"
+			"Project source": "https://github.com/search?q=topic%3Abase-registries&type=repositories"
 		},
 		{
 			"Company" : "Small Town Heroes",
