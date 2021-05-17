@@ -36,7 +36,7 @@
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
 			"Stack" : ["C#", "F#", ".net core", "vue.js", "docker", "event-sourcing"],
-			"Description": "Moving the building & address registry from a single database with many services directly accessing the database, to a maintainable distrubited event-sourced system with managed APIs",
+			"Description": "Moving the 'building & address registry' from a single database with many services directly accessing the database, to a maintainable distrubited event-sourced system with managed APIs",
 			"Project source": "https://github.com/search?q=topic%3Abase-registries&type=repositories"
 		},
 		{
