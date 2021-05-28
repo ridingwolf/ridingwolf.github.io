@@ -32,6 +32,13 @@
 	],
 	"Experience" : [
 		{
+			"Company" : "Officient",
+			"Period" : "May 2021 - present",
+			"Function" : "Tester/Coach",
+			"Stack" : [],
+			"Description": "Guarding the quality of the developed HR software, while helping the team streamline the processes to make delivering this quality maintianable."
+		},
+		{
 			"Company" : "Informatie Vlaanderen",
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
