@@ -1,22 +1,20 @@
-.section.education .content.type {
-	display: none;
+.section.education .object-property { 
+	margin-top: 0.5em;
 }
-
-.section.education .object::before {
-	content: 'Job training: ';
-	font-style: italic;
-	clear: both;
-	float: left;
-}
-
-.section.education .object:first-child::before {
-	content: '';
-}
-
-.section.education .object:first-child .object-property:last-child {
-	clear: none;
-}
-
-.section.education .object:first-child .object-property:last-child .content::before {
+	
+.section.education .object-property:not(:first-child) .content::before {
 	content: ', ';
+}
+
+.section.education .object-property .content.certification::before {
+	margin-left: 0.2em;
+	content: '(';
+
+}
+.section.education .certification::after {
+	content: ')';
+}
+
+.section.education .object-property {
+	clear: none;
 }

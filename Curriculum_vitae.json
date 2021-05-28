@@ -11,22 +11,21 @@
 	},
 	"Education" : [	
 		{
-			"Type" : "Secondary school",
 			"Content" : "Photography",
+			"Certification" : "A2",
 			"Institute" : "SISA Antwerpen",
-			"Completed" : "June 2000",
-			"Certification" : "A2"
+			"Completed" : "June 2000"
 		},
 		{
-			"Type" : "Job training",
 			"Content" : ".Net developer",
+			"Certification" : "Job training",
 			"Institute" : "VDAB Wevelgem",
 			"Completed" : "October 2009"
 		},
 		{
-			"Type" : "Job training",
 			"Content" : "PC/Network technician",
-			"Institute" : "VDAB Wondelgem(Gent)",
+			"Certification" : "Job training",
+			"Institute" : "VDAB Wondelgem",
 			"Completed" : "September 2002"
 		}
 	],
