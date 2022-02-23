@@ -35,14 +35,14 @@
 			"Period" : "May 2021 - present",
 			"Function" : "Tester/Coach",
 			"Stack" : [],
-			"Description": "Guarding the quality of the developed HR software, while helping the team streamline the processes to make delivering this quality maintianable."
+			"Description": "Guarding the quality of the developed HR software, while helping the team streamline the processes to make delivering this quality maintainable."
 		},
 		{
 			"Company" : "Informatie Vlaanderen",
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
 			"Stack" : ["C#", "F#", ".net core", "vue.js", "docker", "event-sourcing"],
-			"Description": "Moving the 'building & address registry' from a single database with many services directly accessing the database, to a maintainable distrubited event-sourced system with managed APIs",
+			"Description": "Moving the 'building & address registry' from a single database with many services directly accessing the database, to a maintainable distributed event-sourced system with managed APIs",
 			"Project source": "https://github.com/search?q=topic%3Abase-registries&type=repositories"
 		},
 		{
@@ -63,7 +63,7 @@
 			"Period" : "August 2011 - October 2016",
 			"Function" : "Developer (full stack)",
 			"Stack" : ["C#", "Nhibernate", "Spark view engie", "Castle Monorail(MVC)", "Rake", "sass", "Javascript (client/server side)", "MySql"],
-			"Description": "Maintaining and expandaning the Groupbuying platfrom with direct feedback from the business"
+			"Description": "Maintaining and expanding the Groupbuying platfrom with direct feedback from the business"
 		},
 		{
 			"Company" : "MMPCS",
@@ -78,7 +78,7 @@
 		}
 
 	],
-	"Photography" : ["Event/Documemtary", "Business portraits", "Custom prints"],
+	"Photography" : ["Event/Documentary", "Business portraits", "Custom prints"],
 	"Languages" : [
 		{ "Language" : "Dutch" , "Level" : "native"},
 		{ "Language" : "English" , "Level" : "very good"},
