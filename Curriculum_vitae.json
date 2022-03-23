@@ -31,6 +31,13 @@
 	],
 	"Experience" : [
 		{
+			"Company" : "Sirus",
+			"Period" : "March 2022 - current",
+			"Function" : "Developer",
+			"Stack" : ["C#"],
+			"Description": "Building a catalog for employee trainings in the construction sector"
+		},
+		{
 			"Company" : "Officient",
 			"Period" : "May 2021 - February 2022",
 			"Function" : "Tester/Coach",
