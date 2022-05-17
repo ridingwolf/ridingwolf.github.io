@@ -92,7 +92,7 @@
 		{ "Language" : "French" , "Level" : "rusty"}
 	],
 	"Buzz words" : [
-		"C#", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "sass/scss", "hmtl",
+		"C#", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "sass/scss", "html",
 		"MVC", "TDD", "CI/CD", "Software craft-journeyman", "Linux", "Windows", "Mac OSX", "Android", "agile", "swift",
 		"React native", "Redux", "vue.js", "Domain Driven Design", "fishshell", "scratch"
 	],
