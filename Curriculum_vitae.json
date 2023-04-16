@@ -32,10 +32,10 @@
 	"Experience" : [
 		{
 			"Company" : "Sirus",
-			"Period" : "March 2022 - current",
+			"Period" : "March 2022 - April 2023",
 			"Function" : "Developer",
-			"Stack" : ["C#"],
-			"Description": "Building a catalog for employee trainings in the construction sector"
+			"Stack" : ["C#", ".net core"],
+			"Description": "Digitalizing the catalog and management systems for employee trainings in the construction sector"
 		},
 		{
 			"Company" : "Officient",
@@ -101,7 +101,7 @@
 			"Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be, UK, De, Ca, Fr)",
 			"CoderDojo", "DDD Be", "DDD Europe", "European testing conference", "The Joy of coding", "CITCON", "Event Sourcing Live"
 		],
-		"Upcoming" : ["DDD Europe '22"],
+		"Upcoming" : ["NewCrafts"],
 		"Organised": ["Openhack Antwerp", "Software craft open space"]
 
 	},
