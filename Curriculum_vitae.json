@@ -7,7 +7,9 @@
 			"Place" : "Gent"
 		},
 		"Email" : "json-resume@wolfcraft.io",
-		"Twitter" : "@ridingwolf"
+		"Bluesky": "@ridingwolf.bsky.social",
+		"Mastodon": "@ridingwolf@mastodon.social"
+		
 	},
 	"Education" : [	
 		{
