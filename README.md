@@ -4,14 +4,14 @@
 A more user friendly version can be found at [https://cv.wolfcraft.io/](https://cv.wolfcraft.io/)
 
 ### Which features:
-- more readeble format
+- more readable format
 - printable version
 - links back to this project
 - easter eggs
 
 ## Description
 
-The project contains _data_ and _represtation logic_ to create a live resumé.  
+The project contains _data_ and _representation logic_ to create a live resumé.  
 The core is the [curriculum-vitea](./Curriculum_vitae.json) data file, which can be easily updated.  
 A non-technical represtation of this data is pusblished via github-pages tranforming the json data to html with some javascript.
 
