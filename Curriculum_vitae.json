@@ -108,9 +108,9 @@
 	"Activities" : {
 		"Participated" : [
 			"Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be, UK, De, Ca, Fr)",
-			"CoderDojo", "DDD Be", "DDD Europe", "European testing conference", "The Joy of coding", "CITCON", "Event Sourcing Live"
+			"CoderDojo", "DDD Be", "DDD Europe", "European testing conference", "The Joy of coding", "CITCON", "Event Sourcing Live", "NewCrafts", "Hotfix", "KanDDDinsky"
 		],
-		"Upcoming" : ["NewCrafts"],
+		"Upcoming" : [],
 		"Organised": ["Openhack Antwerp", "Software craft open space"]
 
 	},
