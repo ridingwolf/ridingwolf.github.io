@@ -9,7 +9,7 @@ const sectionHeaderFormatters = [
             createHtmlTag(
                 'a', 
                 `${renderCameraIcon()}${section} `,
-                { href : 'https://portfolio.wolfcraft.io', target: '_blank' }))
+                { href : 'https://photography.wolfcraft.io', target: '_blank' }))
     }
 ]
 
