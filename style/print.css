@@ -22,5 +22,6 @@ svg.icon.printer {
 }
 
 .wolfcraft-stamp {
-	right: -4%;
+	top: 3% !important;
+	right: -6% !important;
 }
