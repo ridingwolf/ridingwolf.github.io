@@ -20,3 +20,7 @@ body {
 svg.icon.printer {
 	display: none !important;
 }
+
+.wolfcraft-stamp {
+	right: -4%;
+}
