@@ -5,5 +5,5 @@ _site/
 
 # don't commit gemfile for running locally since it gives errors/warnings when using the default gh-pages setup
 # can be included when gh-pages is configured manually
-Gemffile
-Gemffile.lock
+Gemfile
+Gemfile.lock
