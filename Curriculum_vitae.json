@@ -105,12 +105,11 @@
 		"MVC", "TDD", "CI/CD", "Software craft-journeyman", "Linux", "Windows", "Mac OSX", "Android", "agile", "swift",
 		"React native", "Redux", "vue.js", "Domain Driven Design", "fishshell", "scratch", "SQL Stream Store", "Hexogal architechture", "event sourcing"
 	],
-	"Activities" : {
+	"Communities/Events" : {
 		"Participated" : [
 			"Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be, UK, De, Ca, Fr)",
 			"CoderDojo", "DDD Be", "DDD Europe", "European testing conference", "The Joy of coding", "CITCON", "Event Sourcing Live", "NewCrafts", "Hotfix", "KanDDDinsky"
 		],
-		"Upcoming" : [],
 		"Organised": ["Openhack Antwerp", "Software craft open space"]
 
 	},
