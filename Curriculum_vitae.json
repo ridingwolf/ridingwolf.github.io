@@ -36,7 +36,7 @@
 			"Company" : "Sirus",
 			"Period" : "May 2023 - March 2025",
 			"Function" : "Developer",
-			"Stack" : ["C#", ".net core"],
+			"Stack" : ["C#", ".net core", "Typescript", "Angular", "MS SQL"],
 			"Description headline": "Expanding the web platform for managing sectorial premiums & pensions for the food industry.",
 			"Description": "Responsibilities included implementation of new features, improving performance, mentoring less experienced team members, validating and aligning business requests with the infrastructure."
 		},
@@ -44,7 +44,7 @@
 			"Company" : "Sirus",
 			"Period" : "March 2022 - April 2023",
 			"Function" : "Techincal lead/Architect",
-			"Stack" : ["C#", ".net core"],
+			"Stack" : ["C#", ".net core", "MS SQL"],
 			"Description headline": "Digitalizing the catalog & management systems for employee trainings in the construction sector.",
 			"Description": "Building a web platform that is accessable for registered companies, with backenend intgration for managing the content and integrating with existing applications. Responsibilities included supporting the team with technical and design decisions, mentoring less experienced team members, and contributing to the implementation of new features."
 		},
@@ -67,7 +67,7 @@
 			"Company" : "Small Town Heroes",
 			"Period" : "September 2017 - March 2018",
 			"Function" : "Developer",
-			"Stack" : ["node.js", "React native", "docker", "objective-C", "Java"],
+			"Stack" : ["Node.js", "React native", "Docker", "Objective-C", "Java(Android)"],
 			"Description": "Building the new version of the 'Studio 100 Go' app and website"
 		},
 		{
@@ -103,9 +103,10 @@
 		{ "Language" : "French" , "Level" : "rusty"}
 	],
 	"Skills / Buzz words" : [
-		"C#", "F# (script)", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "sass/scss", "html",
-		"MVC", "TDD", "CI/CD", "Software craft-journeyman", "Linux", "Windows", "Mac OSX", "Android", "agile", "swift",
-		"React native", "Redux", "vue.js", "Domain Driven Design", "fishshell", "scratch", "SQL Stream Store", "Hexogal architechture", "event sourcing"
+		"C#", "F# (script)", "Node.js", "Java(android)", "Swift", "Rake", "html", "css", "Scratch",
+		"React native", "React", "Redux", "Vue.js", "Angular",  "SQL Stream Store", "Nhibernate", "Entity framework", "Dapper",
+		"Linux", "Windows", "Mac OSX", "Android", "MySql/Maria DB", "SQL Server", "Docker", "Fishshell",
+		"Git", "TDD", "CI/CD", "Software craft-journeyman",  "agile", "Domain Driven Design", "Hexogal architechture", "Event sourcing", "Coaching"
 	],
 	"Communities and events" : {
 		"Participated" : [
