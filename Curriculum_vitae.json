@@ -102,7 +102,7 @@
 		{ "Language" : "English" , "Level" : "very good"},
 		{ "Language" : "French" , "Level" : "rusty"}
 	],
-	"Skills - Buzz words" : [
+	"Skills / Buzz words" : [
 		"C#", "F# (script)", "Node.js", "Java(android)", "Rake", "MySql/Maria DB", "SQL Server", "Git", "css", "sass/scss", "html",
 		"MVC", "TDD", "CI/CD", "Software craft-journeyman", "Linux", "Windows", "Mac OSX", "Android", "agile", "swift",
 		"React native", "Redux", "vue.js", "Domain Driven Design", "fishshell", "scratch", "SQL Stream Store", "Hexogal architechture", "event sourcing"
