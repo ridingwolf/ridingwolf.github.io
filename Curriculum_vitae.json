@@ -33,7 +33,7 @@
 	],
 	"Experience" : [
 		{
-			"Company" : "Sirus",
+			"Company" : "Sirus | Synersec",
 			"Period" : "May 2023 - March 2025",
 			"Function" : "Developer",
 			"Stack" : ["C#", ".net core", "Typescript", "Angular", "MS SQL"],
@@ -41,7 +41,7 @@
 			"Description": "Responsibilities included implementation of new features, improving performance, mentoring less experienced team members, validating and aligning business requests with the infrastructure."
 		},
 		{
-			"Company" : "Sirus",
+			"Company" : "Sirus | Constructiv",
 			"Period" : "March 2022 - April 2023",
 			"Function" : "Technical lead/Architect",
 			"Stack" : ["C#", ".net core", "MS SQL"],
