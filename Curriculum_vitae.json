@@ -35,7 +35,7 @@
 		{
 			"Company" : "Sirus | Synersec",
 			"Period" : "May 2023 - March 2025",
-			"Function" : "Developer",
+			"Function" : "Developer (full stack)",
 			"Stack" : ["C#", ".net core", "Typescript", "Angular", "MS SQL"],
 			"Description headline": "Expanding the web platform for managing sectorial premiums & pensions for the food industry.",
 			"Description": "Responsibilities included implementation of new features, improving performance, mentoring less experienced team members, validating and aligning business requests with the infrastructure."
