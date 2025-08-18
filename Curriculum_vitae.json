@@ -59,7 +59,7 @@
 			"Company" : "Informatie Vlaanderen",
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
-			"Stack" : ["C#", "F#", ".net core", "vue.js", "docker", "event-sourcing"],
+			"Stack" : ["C#", "F#", ".net core", "vue.js", "docker", "event-sourcing", "AWS"],
 			"Description": "Moving the 'building & address registry' from a single database with many services directly accessing the database, to a maintainable distributed event-sourced system with managed APIs",
 			"Project source": "https://github.com/search?q=topic%3Abase-registries&type=repositories"
 		},
@@ -105,7 +105,7 @@
 	"Skills / Buzz words" : [
 		"C#", "F# (script)", "Node.js", "Java(android)", "Swift", "Rake", "html", "css", "Scratch",
 		"React native", "React", "Redux", "Vue.js", "Angular",  "SQL Stream Store", "Nhibernate", "Entity framework", "Dapper",
-		"Linux", "Windows", "Mac OSX", "Android", "MySql/Maria DB", "SQL Server", "Docker", "Fishshell",
+		"Linux", "Windows", "Mac OSX", "Android", "MySql/Maria DB", "SQL Server", "Docker", "Fishshell", "AWS"
 		"Git", "TDD", "CI/CD", "Software craft-journeyman", "agile", "SOLID", "Domain Driven Design", "Hexogal architecture", "Event sourcing", "Coaching"
 	],
 	"Communities and events" : {
