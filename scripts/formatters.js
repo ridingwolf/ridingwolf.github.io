@@ -9,14 +9,11 @@ function isEmail(str){
 }
 
 function isUrl(str){
-	return str && str..match(/https?:\/\//i);
+	return str && str.match(/https?:\/\//i);
 }
 
 function isUrlToSelf(str){
-	if(!isUrl(str))
-		return false;
-
-	return location && location.orginin === str;
+	return isUrl(str) && location && location.origin === str;
 }
 
 function formatEmail(email){
