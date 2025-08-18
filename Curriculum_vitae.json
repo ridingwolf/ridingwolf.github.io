@@ -105,7 +105,7 @@
 	"Skills / Buzz words" : [
 		"C#", "F# (script)", "Node.js", "Java(android)", "Swift", "Rake", "html", "css", "Scratch",
 		"React native", "React", "Redux", "Vue.js", "Angular",  "SQL Stream Store", "Nhibernate", "Entity framework", "Dapper",
-		"Linux", "Windows", "Mac OSX", "Android", "MySql/Maria DB", "SQL Server", "Docker", "Fishshell", "AWS"
+		"Linux", "Windows", "Mac OSX", "Android", "MySql/Maria DB", "SQL Server", "Docker", "Fishshell", "AWS", 
 		"Git", "TDD", "CI/CD", "Software craft-journeyman", "agile", "SOLID", "Domain Driven Design", "Hexogal architecture", "Event sourcing", "Coaching"
 	],
 	"Communities and events" : {
