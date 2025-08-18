@@ -37,7 +37,7 @@ function formatString(data){
 		return formatEmail(data);
 
 	if (isUrlToSelf(data))
-		return createHtmlTag('a', data, { href: data + ' (latest version)', class: 'data-url print-only', target: '_blank' });
+		return createHtmlTag('a', data + ' (latest version)', { href: data, class: 'data-url print-only', target: '_blank' });
 	
 	if(isUrl(data))
 		return createHtmlTag('a', data, { href: data, class: 'data-url', target: '_blank' });
