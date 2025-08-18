@@ -8,6 +8,17 @@ function isEmail(str){
 	return str && str.match(/^[^@]+@([a-z0-9]+\.)+[a-z0-9]+$/);
 }
 
+function isUrl(str){
+	return str && str..match(/https?:\/\//i);
+}
+
+function isUrlToSelf(str){
+	if(!isUrl(str))
+		return false;
+
+	return location && location.orginin === str;
+}
+
 function formatEmail(email){
     const emailFormat = 
         createHtmlTag('span', '$1') +
@@ -28,7 +39,10 @@ function formatString(data){
 	if(isEmail(data))
 		return formatEmail(data);
 
-	if(data.match(/https?:\/\//i))
+	if (isUrlToSelf(data))
+		return createHtmlTag('a', data, { href: data, class: 'data-url print-only', target: '_blank' });
+	
+	if(isUrl(data))
 		return createHtmlTag('a', data, { href: data, class: 'data-url', target: '_blank' });
 
 	// chrome casts an string "month year" to a date, day 1 of that month, which gives wrong output
