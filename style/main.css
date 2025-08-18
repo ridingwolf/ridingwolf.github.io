@@ -8,6 +8,12 @@
 
 @import url('./print.css') print;
 
+@media not print {
+	.print-only {
+		display: none !important;
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
