@@ -36,7 +36,7 @@
 			"Company" : "Sirus | Synersec",
 			"Period" : "May 2023 - March 2025",
 			"Function" : "Developer (full stack)",
-			"Stack" : ["C#", ".net core", "Typescript", "Angular", "MS SQL"],
+			"Stack" : [".Net core", "C#", "Typescript", "Angular", "Nhibernate", "Dapper", "MS SQL"],
 			"Description headline": "Expanding the web platform for managing sectorial premiums & pensions for the food industry.",
 			"Description": "Responsibilities included implementation of new features, improving performance, mentoring less experienced team members, validating and aligning business requests with the infrastructure."
 		},
@@ -44,7 +44,7 @@
 			"Company" : "Sirus | Constructiv",
 			"Period" : "March 2022 - April 2023",
 			"Function" : "Technical lead/Architect",
-			"Stack" : ["C#", ".net core", "MS SQL"],
+			"Stack" : [".Net core", "C#", "Angular", "Entity framework", "MS SQL"],
 			"Description headline": "Digitalizing the catalog & management systems for employee trainings in the construction sector.",
 			"Description": "Building a web platform that is accessable for registered companies, with backenend intgration for managing the content and integrating with existing applications. Responsibilities included supporting the team with technical and design decisions, mentoring less experienced team members, and contributing to the implementation of new features."
 		},
@@ -59,7 +59,7 @@
 			"Company" : "Informatie Vlaanderen",
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
-			"Stack" : ["C#", "F#", ".net core", "vue.js", "docker", "event-sourcing", "AWS"],
+			"Stack" : [".Net core", "C#", "F#", "Vue.js", "Entity framework", "AWS", "MS SQL", "Docker", "event-sourcing"],
 			"Description": "Moving the 'building & address registry' from a single database with many services directly accessing the database, to a maintainable distributed event-sourced system with managed APIs",
 			"Project source": "https://github.com/search?q=topic%3Abase-registries&type=repositories"
 		},
@@ -67,27 +67,29 @@
 			"Company" : "Small Town Heroes",
 			"Period" : "September 2017 - March 2018",
 			"Function" : "Developer",
-			"Stack" : ["Node.js", "React native", "Docker", "Objective-C", "Java(Android)"],
+			"Stack" : ["Node.js", "Javascript", "Objective-C", "Java(Android)", "React native", "Docker"],
 			"Description": "Building the new version of the 'Studio 100 Go' app and website"
 		},
 		{
 			"Company" : "Aaltra",
 			"Period" : "November 2016 - September 2017",
 			"Function" : "Developer (full stack)",
-			"Stack" : ["C#", "swift", "javascript", "MS SQL", "less", "grunt"]
+			"Stack" : [".Net", "C#", "Javascript", "Swift", "html", "Dapper", "MS SQL", "less", "grunt"],
+			"Description": "Creating a configuration tooling for Daikin heat-pump systems"
 		},
 		{
 			"Company" : "iChoosr",
 			"Period" : "August 2011 - October 2016",
 			"Function" : "Developer (full stack)",
-			"Stack" : ["C#", "Nhibernate", "Spark view engie", "Castle Monorail(MVC)", "Rake", "sass", "Javascript (client/server side)", "MySql"],
+			"Stack" : [".Net", "C#", "Javascript", "Node.js", "NVelocity", "Spark view engie", "Nhibernate", "MySql", "Castle Monorail(MVC)", "Castle Windsor(DI)", "Rake", "sass"],
 			"Description": "Maintaining and expanding the Groupbuying platfrom with direct feedback from the business"
 		},
 		{
 			"Company" : "MMPCS",
 			"Period" : "January 2010 - July 2011",
 			"Function" : "Junior Developer",
-			"Stack" : ["VB", "C#", "POS for .NET", "WPF", "Win-forms", "MS SQL"]
+			"Stack" : [".Net", "VB", "C#", "WPF", "Win-forms","POS for .NET", "MS SQL"],
+			"Description": "Backoffice & POS systems for B-segment retail"
 		},
 		{
 			"Company" : "Ketten Wulf, Dep. Dyna Chains",
@@ -103,7 +105,7 @@
 		{ "Language" : "French" , "Level" : "rusty"}
 	],
 	"Skills / Buzz words" : [
-		"C#", "F# (script)", "Node.js", "Java(android)", "Swift", "Rake", "html", "css", "Scratch",
+		".Net", ".Net core", "C#", "F#", "Javascript", "Typescript", "Java(android)", "Swift", "Node.js", "Rake", "html", "css", "Scratch",
 		"React native", "React", "Redux", "Vue.js", "Angular",  "SQL Stream Store", "Nhibernate", "Entity framework", "Dapper",
 		"Linux", "Windows", "Mac OSX", "Android", "MySql/Maria DB", "SQL Server", "Docker", "Fishshell", "AWS", 
 		"Git", "TDD", "CI/CD", "Software craft-journeyman", "agile", "SOLID", "Domain Driven Design", "Hexogal architecture", "Event sourcing", "Coaching"
