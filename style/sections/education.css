@@ -1,3 +1,7 @@
+.education .complex-list > .object:not(:first-child) {
+    margin-bottom: 0;
+}
+
 .section.education .object-property { 
 	margin-top: 0.5em;
 }
