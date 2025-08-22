@@ -6,10 +6,7 @@
 			"Date" : "1981-11-18T18:30:00.000Z",
 			"Place" : "Gent"
 		},
-		"Email" : "json-resume@wolfcraft.io",
-		"Bluesky": "@ridingwolf.bsky.social",
-		"Mastodon": "@ridingwolf@mastodon.social"
-		
+		"Email" : "json-resume@wolfcraft.io"
 	},
 	"Education" : [	
 		{
@@ -125,6 +122,8 @@
 		"https://cv.wolfcraft.io",
 		"https://github.com/ridingwolf",
 		"https://github.com/wolfcraft-io",
-		"https://www.linkedin.com/in/professional-idiot/"
+		"https://www.linkedin.com/in/professional-idiot/",
+		"https://bsky.app/profile/ridingwolf.bsky.social",
+		"https://mastodon.social/@ridingwolf",
 	]
 }
