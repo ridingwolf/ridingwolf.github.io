@@ -30,6 +30,14 @@
 	],
 	"Experience" : [
 		{
+			"Company" : "Wit-Gele Kruis (Oost-Vlaanderen)",
+			"Period" : "December 2025 - December 2026",
+			"Function" : "Developer (full stack)",
+			"Stack" : [".Net core", ".Net framework", "C#", "EF", "Dapper", "MS SQL", "CI/CD", "DevOps", "Octopus deploy", "scrum", "TDD"],
+			"Description headline": "Maintaining and bridging the legacy platform with new fuctionality until the new platform is rolled out",
+			"Description": "Responsibilities included implementation of new features, improving performance, technical analysis."
+		},
+		{
 			"Company" : "Sirus | Synersec",
 			"Period" : "May 2023 - March 2025",
 			"Function" : "Developer (full stack)",
