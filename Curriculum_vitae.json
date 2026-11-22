@@ -34,8 +34,8 @@
 			"Period" : "December 2025 - present",
 			"Function" : "Developer (full stack)",
 			"Stack" : [".Net core", ".Net framework", "C#", "EF", "Dapper", "MS SQL", "CI/CD", "DevOps", "Octopus deploy", "scrum"],
-			"Description headline": "Maintaining and bridging the legacy platform with new fuctionality until the new platform is rolled out",
-			"Description": "Responsibilities included implementation of new features, improving performance, technical analysis."
+			"Description headline": "Maintaining and bridging the legacy platform with new functionality until the new platform is rolled out",
+			"Description": "Responsibilities include implementation of new features, improving performance, technical analysis."
 		},
 		{
 			"Company" : "Sirus | Synersec",
@@ -51,13 +51,12 @@
 			"Function" : "Technical lead/Architect",
 			"Stack" : [".Net core", "C#", "Angular", "Entity framework", "MS SQL", "CI/CD", "DevOps", "Azure DevOps", "scrum", "TDD"],
 			"Description headline": "Digitalizing the catalog & management systems for employee trainings in the construction sector.",
-			"Description": "Building a web platform that is accessable for registered companies, with backenend intgration for managing the content and integrating with existing applications. Responsibilities included supporting the team with technical and design decisions, mentoring less experienced team members, and contributing to the implementation of new features."
+			"Description": "Building a web platform that is accessible for registered companies, with backend integration for managing the content and integrating with existing applications. Responsibilities included supporting the team with technical and design decisions, mentoring less experienced team members, and contributing to the implementation of new features."
 		},
 		{
 			"Company" : "Officient",
 			"Period" : "May 2021 - February 2022",
 			"Function" : "Tester/Coach",
-			"Stack" : [],
 			"Description": "Guarding the quality of the developed HR software, while helping the team streamline the processes to make delivering this quality maintainable."
 		},
 		{
@@ -86,8 +85,8 @@
 			"Company" : "iChoosr",
 			"Period" : "August 2011 - October 2016",
 			"Function" : "Developer (full stack)",
-			"Stack" : [".Net", "C#", "Javascript", "Node.js", "NVelocity", "Spark view engie", "Nhibernate", "MySql", "Castle Monorail(MVC)", "Castle Windsor(DI)", "Rake", "sass", "CI/CD", "TeamCity", "scrum", "TDD"],
-			"Description": "Maintaining and expanding the Groupbuying platfrom with direct feedback from the business"
+			"Stack" : [".Net", "C#", "Javascript", "Node.js", "NVelocity", "Spark view engine", "Nhibernate", "MySql", "Castle Monorail(MVC)", "Castle Windsor(DI)", "Rake", "sass", "CI/CD", "TeamCity", "scrum", "TDD"],
+			"Description": "Maintaining and expanding the Groupbuying platform with direct feedback from the business"
 		},
 		{
 			"Company" : "MMPCS",
@@ -114,7 +113,7 @@
 		"React native", "React", "Redux", "Vue.js", "Angular",  "SQL Stream Store", "Nhibernate", "Entity framework", "Dapper",
 		"Linux", "Windows", "Mac OSX", "Android", "MySql/Maria DB", "SQL Server", "Docker", "Fishshell", "AWS", 
 		"DevOps", "CI/CD", "TeamCity", "Github actions", "Azure Devops", "Octopus deploy",  
-		"Git", "TDD", "Software craft-journeyman", "agile", "scrum", "kanban", "SOLID", "Domain Driven Design", "Hexogal architecture", "Event sourcing", "Coaching"
+		"Git", "TDD", "Software craft-journeyman", "agile", "scrum", "kanban", "SOLID", "Domain Driven Design", "Hexagonal architecture", "Event sourcing", "Coaching"
 	],
 	"Communities and events" : {
 		"Participated" : [

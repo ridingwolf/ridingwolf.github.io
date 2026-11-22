@@ -14,7 +14,7 @@ function loadResumeData(callback) {
 	// nicked from http://codepen.io/KryptoniteDove/post/load-json-file-locally-using-pure-javascript
     var request = new XMLHttpRequest();
     request.overrideMimeType("application/json");
-    request.open('GET', '../../Curriculum_vitae.json', true); 
+    request.open('GET', '/Curriculum_vitae.json', true); 
     request.onreadystatechange = function () {
           if (request.readyState == 4 && request.status == "200") {
             callback(JSON.parse(request.responseText));
@@ -26,7 +26,7 @@ function loadResumeData(callback) {
 function setPageTitle(data){
 	document
 		.getElementsByTagName('title')[0]
-		.innerHTML += ' - ' + data['Personal Summary']['Name'] || 'Sloppy developer';
+		.innerHTML += ' - ' + (data['Personal Summary']['Name'] || 'Sloppy developer');
 }
 
 function render(data){
@@ -47,8 +47,10 @@ function usesInternetExploder(){
 
 function showErrorMessage(message){
 	var warning = document.getElementById('loading-screen') || document.getElementById('resume');
-	if(null == warning)
+	if(null == warning) {
 		alert('Something went horribly wrong, could not find warning box.');
+		return;
+	}
 
 	warning.removeAttribute('id');
 	warning.setAttribute('class', 'warning');

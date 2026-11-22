@@ -1,16 +1,16 @@
-.section.activities .object .object-property .name {
+.section.communities-and-events .object .object-property .name {
 	display: block;
 }
 
-.section.activities .name {
+.section.communities-and-events .name {
 	font-style: italic;
 }
 
-.section.activities .content {
+.section.communities-and-events .content {
 	margin-left: 2rem;
 	clear: left;
 }
 
-.section.activities .object .object-property + .object-property {
+.section.communities-and-events .object .object-property + .object-property {
 	margin-top: 0.25rem;
 }

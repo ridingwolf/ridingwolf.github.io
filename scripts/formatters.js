@@ -26,7 +26,7 @@ function formatEmail(email){
 }
 
 function formatClassName(name){
-	return (name || '').toLowerCase().replace(/ /, '-');
+	return (name || '').toLowerCase().replace(/\s+/g, '-');
 }
 
 function formatString(data){ 
@@ -44,7 +44,7 @@ function formatString(data){
 
 	// chrome casts an string "month year" to a date, day 1 of that month, which gives wrong output
 	var date = new Date(data);
-	if(date !== "Invalid Date" && !isNaN(date) && date.getDate() !== 1)
+	if(!isNaN(date) && date.getDate() !== 1)
 		return date.toLocaleString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
 
 	return data; 
