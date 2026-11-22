@@ -34,66 +34,67 @@
 			"Period" : "December 2025 - present",
 			"Function" : "Developer (full stack)",
 			"Stack" : [".Net core", ".Net framework", "C#", "EF", "Dapper", "MS SQL", "CI/CD", "DevOps", "Octopus deploy", "scrum"],
-			"Description headline": "Maintaining and bridging the legacy platform with new functionality until the new platform is rolled out",
-			"Description": "Responsibilities include implementation of new features, improving performance, technical analysis."
+			"Description headline" : "Maintaining and bridging the legacy platform with new functionality until the new platform is rolled out",
+			"Description" : "Responsibilities include implementation of new features, improving performance, technical analysis."
 		},
 		{
 			"Company" : "Sirus | Synersec",
 			"Period" : "May 2023 - March 2025",
 			"Function" : "Developer (full stack)",
 			"Stack" : [".Net core", "C#", "Typescript", "Angular", "Nhibernate", "Dapper", "MS SQL", "CI/CD", "DevOps", "Octopus deploy", "scrum", "kanban", "TDD"],
-			"Description headline": "Expanding the web platform for managing sectorial premiums & pensions for the food industry.",
-			"Description": "Responsibilities included implementation of new features, improving performance, mentoring less experienced team members, validating and aligning business requests with the infrastructure."
+			"Description headline" : "Expanding the web platform for managing sectorial premiums & pensions for the food industry.",
+			"Description" : "Responsibilities included implementation of new features, improving performance, mentoring less experienced team members, validating and aligning business requests with the infrastructure."
 		},
 		{
 			"Company" : "Sirus | Constructiv",
 			"Period" : "March 2022 - April 2023",
 			"Function" : "Technical lead/Architect",
 			"Stack" : [".Net core", "C#", "Angular", "Entity framework", "MS SQL", "CI/CD", "DevOps", "Azure DevOps", "scrum", "TDD"],
-			"Description headline": "Digitalizing the catalog & management systems for employee trainings in the construction sector.",
-			"Description": "Building a web platform that is accessible for registered companies, with backend integration for managing the content and integrating with existing applications. Responsibilities included supporting the team with technical and design decisions, mentoring less experienced team members, and contributing to the implementation of new features."
+			"Description headline" : "Digitalizing the catalog & management systems for employee trainings in the construction sector.",
+			"Description" : "Building a web platform that is accessible for registered companies, with backend integration for managing the content and integrating with existing applications. Responsibilities included supporting the team with technical and design decisions, mentoring less experienced team members, and contributing to the implementation of new features."
 		},
 		{
 			"Company" : "Officient",
 			"Period" : "May 2021 - February 2022",
 			"Function" : "Tester/Coach",
-			"Description": "Guarding the quality of the developed HR software, while helping the team streamline the processes to make delivering this quality maintainable."
+			"Stack" : [],
+			"Description" : "Guarding the quality of the developed HR software, while helping the team streamline the processes to make delivering this quality maintainable."
 		},
 		{
 			"Company" : "Informatie Vlaanderen",
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
 			"Stack" : [".Net core", "C#", "F#", "Vue.js", "Entity framework", "AWS", "MS SQL", "Docker", "event-sourcing", "CI/CD", "DevOps", "Github actions", "scrum", "TDD"],
-			"Description": "Moving the 'building & address registry' from a single database with many services directly accessing the database, to a maintainable distributed event-sourced system with managed APIs",
-			"Project source": "https://github.com/search?q=topic%3Abase-registries&type=repositories"
+			"Description" : "Moving the 'building & address registry' from a single database with many services directly accessing the database, to a maintainable distributed event-sourced system with managed APIs",
+			"Project source" : "https://github.com/search?q=topic%3Abase-registries&type=repositories"
 		},
 		{
 			"Company" : "Small Town Heroes",
 			"Period" : "September 2017 - March 2018",
 			"Function" : "Developer",
 			"Stack" : ["Node.js", "Javascript", "Objective-C", "Java(Android)", "React native", "Docker", "CI/CD", "DevOps"],
-			"Description": "Building the new version of the 'Studio 100 Go' app and website"
+			"Description" : "Building the new version of the 'Studio 100 Go' app and website"
 		},
 		{
 			"Company" : "Aaltra",
 			"Period" : "November 2016 - September 2017",
 			"Function" : "Developer (full stack)",
 			"Stack" : [".Net", "C#", "Javascript", "Swift", "html", "Dapper", "MS SQL", "less", "grunt", "TDD"],
-			"Description": "Creating a configuration tooling for Daikin heat-pump systems"
+			"Description" : "Creating a configuration tooling for Daikin heat-pump systems"
 		},
 		{
 			"Company" : "iChoosr",
 			"Period" : "August 2011 - October 2016",
 			"Function" : "Developer (full stack)",
 			"Stack" : [".Net", "C#", "Javascript", "Node.js", "NVelocity", "Spark view engine", "Nhibernate", "MySql", "Castle Monorail(MVC)", "Castle Windsor(DI)", "Rake", "sass", "CI/CD", "TeamCity", "scrum", "TDD"],
-			"Description": "Maintaining and expanding the Groupbuying platform with direct feedback from the business"
+			"Description" : "Maintaining and expanding the Groupbuying platform with direct feedback from the business"
 		},
 		{
 			"Company" : "MMPCS",
 			"Period" : "January 2010 - July 2011",
 			"Function" : "Junior Developer",
 			"Stack" : [".Net", "VB", "C#", "WPF", "Win-forms","POS for .NET", "MS SQL"],
-			"Description": "Backoffice & POS systems for B-segment retail"
+			"Description" : "Backoffice & POS systems for B-segment retail"
 		},
 		{
 			"Company" : "Ketten Wulf, Dep. Dyna Chains",
@@ -120,13 +121,13 @@
 			"Codefreeze", "Software craft open space", "Openhack Antwerp", "Code retreat", "SoCraTes (Be, UK, De, Ca, Fr)",
 			"CoderDojo", "DDD Be", "DDD Europe", "European testing conference", "The Joy of coding", "CITCON", "Event Sourcing Live", "NewCrafts", "Hotfix", "KanDDDinsky"
 		],
-		"Organised": ["Openhack Antwerp", "Software craft open space"]
+		"Organised" : ["Openhack Antwerp", "Software craft open space"]
 
 	},
 	"Hobbies" : [
 		"Reading", "Board gaming", "Wargaming", "Snowboarding", "Motorbike riding", "Being an idiot"
 	],
-	"Links": [
+	"Links" : [
 		"https://cv.wolfcraft.io",
 		"https://github.com/ridingwolf",
 		"https://github.com/wolfcraft-io",
