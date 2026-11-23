@@ -49,7 +49,7 @@
 			"Company" : "Sirus | Constructiv",
 			"Period" : "March 2022 - April 2023",
 			"Function" : "Technical lead/Architect",
-			"Stack" : [".Net core", "C#", "Angular", "Entity framework", "MS SQL", "CI/CD", "DevOps", "Azure DevOps", "scrum", "TDD", "Coaching"],
+			"Stack" : [".Net core", "C#", "Angular", "Entity framework", "NServiceBus", "MS SQL", "CI/CD", "DevOps", "Azure DevOps", "scrum", "TDD", "Coaching"],
 			"Description headline" : "Digitalizing the catalog & management systems for employee trainings in the construction sector.",
 			"Description" : "Building a web platform that is accessible for registered companies, with backend integration for managing the content and integrating with existing applications. Responsibilities included supporting the team with technical and design decisions, mentoring less experienced team members, and contributing to the implementation of new features."
 		},
@@ -112,7 +112,7 @@
 	"Skills / Buzz words" : [
 		".Net framework", ".Net core", "VB.Net", "C#", "F#", "Javascript", "Typescript", "Objective-C", "Java(Android)", "Swift", "Node.js", "Rake", "html", "css", "Scratch",
 		"Win-forms", "WPF","NVelocity", "Spark view engine", "React native", "React", "Vue.js", "Angular", "Blazor",
-		"Redux", "SQL Stream Store", "Nhibernate", "Entity framework", "Dapper", "sass", "less", "grunt", "Castle Monorail(MVC)", "Castle Windsor(DI)", "POS for .Net",
+		"Redux", "SQL Stream Store", "NServiceBus", "Nhibernate", "Entity framework", "Dapper", "sass", "less", "grunt", "Castle Monorail(MVC)", "Castle Windsor(DI)", "POS for .Net",
 		"Linux", "Windows", "Mac OSX", "Android", "MySql", "Maria DB", "MS SQL", "Docker", "Fishshell", "AWS", 
 		"DevOps", "CI/CD", "TeamCity", "Github actions", "Azure DevOps", "Octopus deploy",  
 		"Git", "TDD", "Software craft-journeyman", "agile", "scrum", "kanban", "SOLID", "Domain Driven Design", "Hexagonal architecture", "Event sourcing", "Coaching"
