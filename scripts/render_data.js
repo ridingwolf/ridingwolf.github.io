@@ -26,7 +26,7 @@ function loadResumeData(callback) {
 function setPageTitle(data){
 	document
 		.getElementsByTagName('title')[0]
-		.innerHTML += ' - ' + (data['Personal Summary']['Name'] || 'Sloppy developer');
+		.innerHTML += ' - ' + data['Personal Summary']['Name'];
 }
 
 function render(data){
@@ -59,8 +59,8 @@ function showErrorMessage(message){
 
 (function automaticloading(){
 	loadResumeData(function processData(data){
-		setPageTitle(data);
 		try{
+			setPageTitle(data);
 			if(usesInternetExploder())
 				showErrorMessage('This site is not supported in Internet Explorer. <br/><br/>Please upgrade to <em>Microsoft Edge</em> or use a <em>different browser</em> to view this content.');
 			else
