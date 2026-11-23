@@ -33,7 +33,7 @@
 			"Company" : "Wit-Gele Kruis (Oost-Vlaanderen)",
 			"Period" : "December 2025 - present",
 			"Function" : "Developer (full stack)",
-			"Stack" : [".Net core", ".Net framework", "C#", "EF", "Dapper", "MS SQL", "CI/CD", "DevOps", "Octopus deploy", "scrum"],
+			"Stack" : [".Net core", ".Net framework", "C#", "Win-forms", "Blazor", "Entity framework", "Dapper", "MS SQL", "CI/CD", "DevOps", "Octopus deploy", "Azure DevOps", "scrum"],
 			"Description headline" : "Maintaining and bridging the legacy platform with new functionality until the new platform is rolled out",
 			"Description" : "Responsibilities include implementation of new features, improving performance, technical analysis."
 		},
@@ -41,7 +41,7 @@
 			"Company" : "Sirus | Synersec",
 			"Period" : "May 2023 - March 2025",
 			"Function" : "Developer (full stack)",
-			"Stack" : [".Net core", "C#", "Typescript", "Angular", "Nhibernate", "Dapper", "MS SQL", "CI/CD", "DevOps", "Octopus deploy", "scrum", "kanban", "TDD"],
+			"Stack" : [".Net core", "C#", "Typescript", "Angular", "Nhibernate", "Dapper", "MS SQL", "CI/CD", "DevOps", "Octopus deploy", "scrum", "kanban", "TDD", "Coaching"],
 			"Description headline" : "Expanding the web platform for managing sectorial premiums & pensions for the food industry.",
 			"Description" : "Responsibilities included implementation of new features, improving performance, mentoring less experienced team members, validating and aligning business requests with the infrastructure."
 		},
@@ -49,7 +49,7 @@
 			"Company" : "Sirus | Constructiv",
 			"Period" : "March 2022 - April 2023",
 			"Function" : "Technical lead/Architect",
-			"Stack" : [".Net core", "C#", "Angular", "Entity framework", "MS SQL", "CI/CD", "DevOps", "Azure DevOps", "scrum", "TDD"],
+			"Stack" : [".Net core", "C#", "Angular", "Entity framework", "MS SQL", "CI/CD", "DevOps", "Azure DevOps", "scrum", "TDD", "Coaching"],
 			"Description headline" : "Digitalizing the catalog & management systems for employee trainings in the construction sector.",
 			"Description" : "Building a web platform that is accessible for registered companies, with backend integration for managing the content and integrating with existing applications. Responsibilities included supporting the team with technical and design decisions, mentoring less experienced team members, and contributing to the implementation of new features."
 		},
@@ -57,14 +57,14 @@
 			"Company" : "Officient",
 			"Period" : "May 2021 - February 2022",
 			"Function" : "Tester/Coach",
-			"Stack" : [],
+			"Stack" : ["Coaching"],
 			"Description" : "Guarding the quality of the developed HR software, while helping the team streamline the processes to make delivering this quality maintainable."
 		},
 		{
 			"Company" : "Informatie Vlaanderen",
 			"Period" : "March 2018 - March 2021",
 			"Function" : "Developer",
-			"Stack" : [".Net core", "C#", "F#", "Vue.js", "Entity framework", "AWS", "MS SQL", "Docker", "event-sourcing", "CI/CD", "DevOps", "Github actions", "scrum", "TDD"],
+			"Stack" : [".Net core", "C#", "F#", "Vue.js", "Entity framework", "AWS", "MS SQL", "Docker", "Event sourcing", "CI/CD", "DevOps", "Github actions", "scrum", "TDD"],
 			"Description" : "Moving the 'building & address registry' from a single database with many services directly accessing the database, to a maintainable distributed event-sourced system with managed APIs",
 			"Project source" : "https://github.com/search?q=topic%3Abase-registries&type=repositories"
 		},
@@ -79,21 +79,21 @@
 			"Company" : "Aaltra",
 			"Period" : "November 2016 - September 2017",
 			"Function" : "Developer (full stack)",
-			"Stack" : [".Net", "C#", "Javascript", "Swift", "html", "Dapper", "MS SQL", "less", "grunt", "TDD"],
+			"Stack" : [".Net framework", "C#", "Javascript", "Swift", "html", "Dapper", "MS SQL", "less", "grunt", "TDD"],
 			"Description" : "Creating a configuration tooling for Daikin heat-pump systems"
 		},
 		{
 			"Company" : "iChoosr",
 			"Period" : "August 2011 - October 2016",
 			"Function" : "Developer (full stack)",
-			"Stack" : [".Net", "C#", "Javascript", "Node.js", "NVelocity", "Spark view engine", "Nhibernate", "MySql", "Castle Monorail(MVC)", "Castle Windsor(DI)", "Rake", "sass", "CI/CD", "TeamCity", "scrum", "TDD"],
+			"Stack" : [".Net framework", "C#", "Javascript", "Node.js", "NVelocity", "Spark view engine", "Nhibernate", "MySql", "Maria DB", "Castle Monorail(MVC)", "Castle Windsor(DI)", "Rake", "sass", "CI/CD", "TeamCity", "scrum", "TDD"],
 			"Description" : "Maintaining and expanding the Groupbuying platform with direct feedback from the business"
 		},
 		{
 			"Company" : "MMPCS",
 			"Period" : "January 2010 - July 2011",
 			"Function" : "Junior Developer",
-			"Stack" : [".Net", "VB", "C#", "WPF", "Win-forms","POS for .NET", "MS SQL"],
+			"Stack" : [".Net framework", "VB.Net", "C#", "WPF", "Win-forms","POS for .Net", "MS SQL"],
 			"Description" : "Backoffice & POS systems for B-segment retail"
 		},
 		{
@@ -110,10 +110,11 @@
 		{ "Language" : "French" , "Level" : "rusty"}
 	],
 	"Skills / Buzz words" : [
-		".Net", ".Net core", "C#", "F#", "Javascript", "Typescript", "Java(android)", "Swift", "Node.js", "Rake", "html", "css", "Scratch",
-		"React native", "React", "Redux", "Vue.js", "Angular",  "SQL Stream Store", "Nhibernate", "Entity framework", "Dapper",
-		"Linux", "Windows", "Mac OSX", "Android", "MySql/Maria DB", "SQL Server", "Docker", "Fishshell", "AWS", 
-		"DevOps", "CI/CD", "TeamCity", "Github actions", "Azure Devops", "Octopus deploy",  
+		".Net framework", ".Net core", "VB.Net", "C#", "F#", "Javascript", "Typescript", "Objective-C", "Java(Android)", "Swift", "Node.js", "Rake", "html", "css", "Scratch",
+		"Win-forms", "WPF","NVelocity", "Spark view engine", "React native", "React", "Vue.js", "Angular", "Blazor",
+		"Redux", "SQL Stream Store", "Nhibernate", "Entity framework", "Dapper", "sass", "less", "grunt", "Castle Monorail(MVC)", "Castle Windsor(DI)", "POS for .Net",
+		"Linux", "Windows", "Mac OSX", "Android", "MySql", "Maria DB", "MS SQL", "Docker", "Fishshell", "AWS", 
+		"DevOps", "CI/CD", "TeamCity", "Github actions", "Azure DevOps", "Octopus deploy",  
 		"Git", "TDD", "Software craft-journeyman", "agile", "scrum", "kanban", "SOLID", "Domain Driven Design", "Hexagonal architecture", "Event sourcing", "Coaching"
 	],
 	"Communities and events" : {
